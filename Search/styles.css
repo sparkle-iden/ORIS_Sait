@@ -1,0 +1,157 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #19191d;
+  background: #ffffff;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.home-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.weather {
+  position: absolute;
+  top: 29px;
+  right: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+}
+
+.weather strong {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.weather span {
+  margin-top: 7px;
+  color: #6359b8;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(376px, calc(100% - 40px));
+  transform: translate(-50%, -42%);
+}
+
+.time {
+  margin: 0;
+  color: #18181c;
+  font-size: clamp(38px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  text-align: center;
+}
+
+.greeting {
+  margin: 16px 0 35px;
+  color: #665dc5;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  padding: 0 17px;
+  border: 1px solid #ececef;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(20, 20, 30, 0.025);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.search-form:focus-within {
+  border-color: #c5bff2;
+  box-shadow: 0 5px 20px rgba(102, 93, 197, 0.12);
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  fill: none;
+  stroke: #c8c8cd;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+}
+
+.search-form input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: #24242a;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+}
+
+.search-form input::placeholder { color: #b8b8bf; }
+
+.shortcuts {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.shortcut {
+  display: grid;
+  width: 41px;
+  height: 41px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #f0f0f1;
+  border-radius: 12px;
+  color: #29292d;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(20, 20, 30, 0.03);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.shortcut:hover, .shortcut:focus-visible {
+  transform: translateY(-3px);
+  outline: none;
+  box-shadow: 0 8px 16px rgba(30, 30, 40, 0.1);
+}
+
+.brand { font-size: 17px; font-weight: 700; line-height: 1; }
+.youtube { color: #f04423; font-size: 15px; }
+.chatgpt { color: #28282b; font-size: 19px; }
+.goodreads { color: #5b8c72; font-family: Georgia, serif; }
+.twitter { color: #5a78d8; font-size: 13px; transform: rotate(-20deg); }
+.github { color: #151519; font-size: 20px; }
+.linkedin .brand { padding: 2px 3px; color: white; background: #1475b8; font-size: 11px; border-radius: 2px; }
+.add-shortcut { color: #bfc0c4; font-size: 24px; font-weight: 300; }
+
+@media (max-width: 560px) {
+  .weather { top: 22px; right: 20px; }
+  .hero { width: min(100% - 40px, 330px); transform: translate(-50%, -44%); }
+  .greeting { margin-bottom: 32px; font-size: 16px; }
+  .shortcuts { gap: 12px; margin-top: 28px; }
+  .shortcut { width: 36px; height: 36px; border-radius: 10px; }
+  .shortcuts .linkedin, .shortcuts .add-shortcut { display: none; }
+}
