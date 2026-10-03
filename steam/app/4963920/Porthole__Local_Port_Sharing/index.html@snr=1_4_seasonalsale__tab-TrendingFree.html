@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html class=" responsive DesktopUI" lang="en"  >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Porthole - Local Port Sharing on Steam</title>
+	<link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://store.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=YzJgj1FjzW34&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_global.css?v=sat0mVAiy9IE&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/buttons.css?v=BZhNEtESfYSJ&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/store.css?v=xtQBq3cs1dB0&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/user_reviews.css?v=hcV4WIPnYWMf&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/store_game_shared.css?v=Xi6rfDkwSwlu&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/game.css?v=Q2xKoladWFjC&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/store_background_shared.css?v=RuX0Jh-U_mAP&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/recommended.css?v=fwyY12y3q2Mi&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/user_reviews_rewards.css?v=nDJVyLGQ1XMI&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/apphub.css?v=otgZDLujyGMF&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/ui-lightness/jquery-ui-1.7.2.custom.css?v=qgq7mHqEwLbE&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/game_mob.css?v=dQ-erqoRM7TR&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_responsive.css?v=FJJn0nIxXaGQ&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=NXam5zydzNu8&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/store.fastly.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/tooltip.js?v=a9q1REOJMDBo&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_global.js?v=LKHHGyvATtqM&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/auth_refresh.js?v=w6QbwI-5-j2S&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/main.js?v=vLI1lFq8i6H2&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/dynamicstore.js?v=waCS540JFupl&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				$J.data( document, 'x_readytime', new Date().getTime() );
+				$J.data( document, 'x_oldref', GetNavCookie() );
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'  } );
+		});
+		</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/gamehighlightplayer.js?v=mdJgU3gDKmis&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/user_reviews.js?v=GGcui5RNq7P0&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/app_tagging.js?v=jzh2Y03tD8Ea&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/game.js?v=Qq0Iy-9SDSih&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.min.js?v=mSfqk1QKKgiz&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.resize.min.js?v=MeIf0YViALgL&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.time.min.js?v=CIECDYHJjBgN&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.selection.min.js?v=laPWW88ZIIHe&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/dselect.js?v=xOLWzo6KWkKr&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/jquery-ui-1.9.2.js?v=wxKVOzU-zSuN&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=asNZNxt9kVQn&amp;l=english&amp;_cdn=fastly"></script>
+
+						<meta name="twitter:card" content="summary_large_image">
+					<meta name="Description" content="Play LAN and self-hosted games with faraway friends. Porthole is a proxy that forwards a port you pick to your Steam friends, so they connect as if on your LAN. No port forwarding, no public IP, no router setup. A Steam-based take on Hamachi and Radmin.">
+			
+	<meta name="twitter:site" content="@steam" />
+
+						<meta property="og:title" content="Porthole - Local Port Sharing on Steam">
+					<meta property="twitter:title" content="Porthole - Local Port Sharing on Steam">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:site" content="Steam">
+					<meta property="og:url" content="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/">
+					<meta property="og:description" content="Play LAN and self-hosted games with faraway friends. Porthole is a proxy that forwards a port you pick to your Steam friends, so they connect as if on your LAN. No port forwarding, no public IP, no router setup. A Steam-based take on Hamachi and Radmin.">
+					<meta property="twitter:description" content="Play LAN and self-hosted games with faraway friends. Porthole is a proxy that forwards a port you pick to your Steam friends, so they connect as if on your LAN. No port forwarding, no public IP, no router setup. A Steam-based take on Hamachi and Radmin.">
+			
+			<link rel="canonical" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/">
+	
+			<link rel="image_src" href="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/4a4f91752e88fe3bbb80062dbd4eccc3d309e49b/capsule_616x353.jpg?t=1788422775">
+		<meta property="og:image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/4a4f91752e88fe3bbb80062dbd4eccc3d309e49b/capsule_616x353.jpg?t=1788422775">
+		<meta name="twitter:image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/4a4f91752e88fe3bbb80062dbd4eccc3d309e49b/capsule_616x353.jpg?t=1788422775" />
+				
+	
+	
+	
+	
+	</head>
+<body class="v6 app game_bg menu_background_overlap application widestore v7menu responsive_page " >
+
+
+<div class="responsive_page_frame with_header">
+						<div role="navigation" class="responsive_page_menu_ctn mainmenu" aria-label="Mobile Menu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com/login/?redir=app%2F4963920%2FPorthole__Local_Port_Sharing%2F%3Fsnr%3D1_4_seasonalsale__tab-TrendingFree&redir_ssl=1&snr=1_5_9__global-header">
+									Sign in								</a>
+															<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				Store			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
+						Home											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-responsive-menu">
+						Discovery Queue											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/wishlist/?snr=1_5_9__global-responsive-menu">
+						Wishlist											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-responsive-menu">
+						Points Shop											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-responsive-menu">
+						News											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-responsive-menu">
+						Charts											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				Community			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Home											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discussions											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Market											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Broadcasts											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_5_9__global-responsive-menu">
+				About			</a>
+										<a class="menuitem " href="https://help.steampowered.com/en/">
+				Support			</a>
+			
+							<div class="minor_menu_items">
+																								<div class="menuitem change_language_action">
+									Change language								</div>
+																																	<a class="menuitem" href="../../../mobile.html" target="_blank" rel="noreferrer">Get the Steam Mobile App</a>
+																									<div class="menuitem" role="link" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer  "></div>
+						<div class="mainmenu_footer">
+															<div class="mainmenu_footer_logo"><img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/footerLogo_valve_new.png"></div>
+								© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.								<span class="mainmenu_valve_links">
+									<a href="https://store.steampowered.com/privacy_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">Privacy Policy</a>
+									&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+									&nbsp;| &nbsp;<a href="https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436" target="_blank">Accessibility</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">Steam Subscriber Agreement</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/?snr=1_5_9__global-responsive-menu" target="_blank">Refunds</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_5_9__global-responsive-menu" target="_blank">Cookies</a>
+								</span>
+													</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;Filter&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
+															<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+													</a>
+					</div>
+					<div class="responsive_header_react_target" data-featuretarget="store-menu-responsive-search"><div class="responsive_header_react_placeholder"></div></div>				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div role="banner" id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+	<div class="content">
+		<div class="logo">
+			<span id="logo_holder">
+									<a href="https://store.steampowered.com/?snr=1_5_9__global-header" aria-label="Link to the Steam Homepage">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="144.5" height="44" alt="Link to the Steam Homepage">
+					</a>
+							</span>
+		</div>
+
+			<div role="navigation" class="supernav_container" aria-label="Global Menu">
+								<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-header" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				STORE			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-header">
+						Home											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-header">
+						Discovery Queue											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/wishlist/?snr=1_5_9__global-header">
+						Wishlist											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-header">
+						Points Shop											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-header">
+						News											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-header">
+						Charts											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				COMMUNITY			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Home											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discussions											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Market											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Broadcasts											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+				About			</a>
+										<a class="menuitem " href="https://help.steampowered.com/en/">
+				SUPPORT			</a>
+				</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div role="navigation" id="global_action_menu" aria-label="Account Menu">
+									<a class="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+						<div class="header_installsteam_btn_content">
+							Install Steam						</div>
+					</a>
+				
+				
+									<a class="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F4963920%2FPorthole__Local_Port_Sharing%2F%3Fsnr%3D1_4_seasonalsale__tab-TrendingFree&redir_ssl=1&snr=1_5_9__global-header">sign in</a>
+											&nbsp;|&nbsp;
+						<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+						<div class="popup_block_new" id="language_dropdown" style="display: none;">
+							<div class="popup_body popup_menu">
+																																															<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=schinese&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'schinese' ); return false;">
+											简体中文 (Simplified Chinese)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=tchinese&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'tchinese' ); return false;">
+											繁體中文 (Traditional Chinese)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=japanese&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'japanese' ); return false;">
+											日本語 (Japanese)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=koreana&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'koreana' ); return false;">
+											한국어 (Korean)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=thai&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'thai' ); return false;">
+											ไทย (Thai)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=indonesian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'indonesian' ); return false;">
+											Bahasa Indonesia (Indonesian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=malay&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'malay' ); return false;">
+											Bahasa Melayu (Malay)																							<span class="language_beta">BETA</span>
+																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=bulgarian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'bulgarian' ); return false;">
+											Български (Bulgarian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=czech&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'czech' ); return false;">
+											Čeština (Czech)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=danish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'danish' ); return false;">
+											Dansk (Danish)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=german&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'german' ); return false;">
+											Deutsch (German)																					</a>
+																																																	<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=spanish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'spanish' ); return false;">
+											Español - España (Spanish - Spain)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=latam&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'latam' ); return false;">
+											Español - Latinoamérica (Spanish - Latin America)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=greek&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'greek' ); return false;">
+											Ελληνικά (Greek)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=french&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'french' ); return false;">
+											Français (French)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=italian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'italian' ); return false;">
+											Italiano (Italian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=hungarian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'hungarian' ); return false;">
+											Magyar (Hungarian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=dutch&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'dutch' ); return false;">
+											Nederlands (Dutch)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=norwegian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'norwegian' ); return false;">
+											Norsk (Norwegian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=polish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'polish' ); return false;">
+											Polski (Polish)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=portuguese&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'portuguese' ); return false;">
+											Português (Portuguese - Portugal)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=brazilian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'brazilian' ); return false;">
+											Português - Brasil (Portuguese - Brazil)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=romanian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'romanian' ); return false;">
+											Română (Romanian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=russian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'russian' ); return false;">
+											Русский (Russian)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=finnish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'finnish' ); return false;">
+											Suomi (Finnish)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=swedish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'swedish' ); return false;">
+											Svenska (Swedish)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=turkish&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'turkish' ); return false;">
+											Türkçe (Turkish)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=vietnamese&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'vietnamese' ); return false;">
+											Tiếng Việt (Vietnamese)																					</a>
+																																							<a class="popup_menu_item tight" href="https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/?l=ukrainian&amp;snr=1_4_seasonalsale__tab-TrendingFree" onclick="ChangeLanguage( 'ukrainian' ); return false;">
+											Українська (Ukrainian)																					</a>
+																									<a class="popup_menu_item tight" href="https://www.valvesoftware.com/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Report a translation problem</a>
+							</div>
+						</div>
+												</div>
+					</div>
+			</div>
+</div>
+<div class="StoreMenuLoadingPlaceholder" data-featuretarget="store-menu-v7"><div class="PlaceholderInner"></div></div><div id="responsive_store_nav_ctn"></div><div id="responsive_store_nav_overlay" style="display:none"><div id="responsive_store_nav_overlay_ctn"></div><div id="responsive_store_nav_overlay_bottom"></div></div><div id="responsive_store_search_overlay" style="display:none"></div><div data-cart-banner-spot="1"></div>
+		<div role="main" class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true,&quot;navKey&quot;:&quot;responsive_page_template_content&quot;}" >
+
+			<div id="application_config" style="display: none;"  data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;RU&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/&quot;,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/store.steampowered.com\/\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1790976375,&quot;PAGE_TIMESTAMP&quot;:1790988378,&quot;IN_TENFOOT&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Store&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_ASSETS_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;NOW&quot;:1790988378,&quot;SUPPORT_BASE_URL&quot;:&quot;https:\/\/steamsupport.valvesoftware.com\/&quot;,&quot;SNR&quot;:&quot;1_5_9_&quot;}" data-userinfo="{&quot;logged_in&quot;:false,&quot;country_code&quot;:&quot;RU&quot;,&quot;excluded_content_descriptors&quot;:[3,4]}" data-hwinfo="{&quot;bSteamOS&quot;:false,&quot;bSteamDeck&quot;:false,&quot;bSteamMachine&quot;:false,&quot;bSteamFrame&quot;:false}" data-broadcastuser="{&quot;success&quot;:1,&quot;bHideStoreBroadcast&quot;:false}" data-store_page_asset_url="&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/%s?t=1788422775&quot;" data-store_page_extra_assets_url="&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/%s?t=1788422775&quot;" data-store_page_extra_assets_map="{&quot;extras\/porthole-store-header&quot;:[{&quot;urlPart&quot;:&quot;extras\/104e40e4338eaffcfcb1e1581a588970.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:&quot;extras_big\/104e40e4338eaffcfcb1e1581a588970.avif&quot;,&quot;width&quot;:&quot;1560&quot;,&quot;height&quot;:&quot;428&quot;}],&quot;extras\/porthole-demo&quot;:[{&quot;urlPart&quot;:&quot;extras\/b0b036b3e675823e0fea7e6036995228.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1120&quot;,&quot;height&quot;:&quot;630&quot;},{&quot;urlPart&quot;:&quot;extras\/b0b036b3e675823e0fea7e6036995228.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1120&quot;,&quot;height&quot;:&quot;630&quot;},{&quot;urlPart&quot;:&quot;extras\/b0b036b3e675823e0fea7e6036995228.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1120&quot;,&quot;height&quot;:&quot;630&quot;}]}" data-store_user_config="{&quot;webapi_token&quot;:&quot;&quot;,&quot;shoppingcart&quot;:null,&quot;originating_navdata&quot;:{&quot;domain&quot;:&quot;store.steampowered.com&quot;,&quot;controller&quot;:&quot;default&quot;,&quot;method&quot;:&quot;seasonalsale&quot;,&quot;submethod&quot;:&quot;&quot;,&quot;feature&quot;:&quot;tab-TrendingFree&quot;,&quot;depth&quot;:0,&quot;countrycode&quot;:&quot;RU&quot;,&quot;webkey&quot;:null,&quot;is_client&quot;:false,&quot;curator_data&quot;:null,&quot;is_likely_bot&quot;:false,&quot;is_utm&quot;:false},&quot;wishlist_item_count&quot;:0}"></div><div id="application_root"></div><script>window.g_wapit="";</script><link href="https://store.fastly.steamstatic.com/public/css/applications/store/main.css?v=S_e7RityyZE3&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/manifest.js?v=KIR6JZQXBNH2&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/libraries~b28b7af69.js?v=Vc3ir9_n6fyO&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/main.js?v=VEM3WvDaaysv&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_Languages = ["english"];
+	var g_sessionID = "4af70ceb7945edcdb667b8a8";
+	var g_ServerTime = 1790988378;
+	var g_bUseNewCartAPI = true;
+
+			$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
+	
+	
+	if ( typeof GStoreItemData != 'undefined' )
+	{
+		GStoreItemData.AddNavParams({
+			__page_default: "1_5_9_",
+			__page_default_obj: {"domain":"store.steampowered.com","controller":"application","method":"app","submethod":"","feature":null,"depth":null,"countrycode":"RU","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":null},
+			__originating_obj: {"domain":"store.steampowered.com","controller":"default","method":"seasonalsale","submethod":"","feature":"tab-TrendingFree","depth":0,"countrycode":"RU","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":false},
+			storemenu_recommendedtags: "1_5_9__17"		});
+	}
+
+	if ( typeof GDynamicStore != 'undefined' )
+	{
+		GDynamicStore.Init(0, false, "", {"primary_language":null,"secondary_languages":null,"platform_windows":null,"platform_mac":null,"platform_linux":null,"timestamp_updated":null,"hide_store_broadcast":null,"review_score_preference":null,"timestamp_content_descriptor_preferences_updated":null,"provide_deck_feedback":null,"additional_languages":null,"game_frame_rate_reporting":null,"disable_microtrailers":null,"disable_animated_marketing":null}, 'RU',
+			{"bNoDefaultDescriptors":false});
+		GStoreItemData.SetCurrencyFormatter(function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ",", "");format = format.replace( ",00", '' ); return format; };var strNegativeSymbol = '';	if ( nValueInCents < 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + fmt( nValueInCents, bWholeUnitsOnly ) + " \u0440\u0443\u0431.";});
+		GStoreItemData.SetCurrencyMinPriceIncrement(1);
+	}
+</script>
+
+<script type="text/javascript">
+	var g_bUseOldReviewDisplay = false;
+
+	var g_eDiscoveryQueueType = 0;
+
+	GStoreItemData.AddStoreItemDataSet(
+		{"rgApps":{"5126210":{"name":"ProximaClient","url_name":"ProximaClient","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">Free To Play<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/5126210\/5c2d86480dde223b37932b853634954006c7ea63\/capsule_184x69.jpg?t=1789009328","os_windows":true,"software":true,"has_live_broadcast":false,"coming_soon":true,"release_date_string":"Available: Coming soon","localized":true,"localized_english":true},"2274030":{"name":"GameTranslate","url_name":"GameTranslate","discount_block":"<div class=\"discount_block empty \"><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2274030\/f35fb7fd2c6a21de6ca64164870a014650db7569\/capsule_184x69.jpg?t=1779439610","os_windows":true,"early_access":true,"software":true,"has_live_broadcast":false,"coming_soon":true,"release_date_string":"Available: Coming soon","localized":true,"localized_english":true}},"rgPackages":[],"rgBundles":[]}	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		recommend_franchise: "1_5_9__316",
+		more_from_franchise: "1_5_9__317",
+		bundle_component_preview: "1_5_9__412",
+		recommended_ranked_played: "1_5_9__862",
+	} );
+
+	// Temporary code to allow React to move focus to elements that are non-React.
+	function MoveFocusToId( id )
+	{
+		$el = $J( id );
+		if ( $el.length )
+		{
+			$el[0].focus();
+		}
+	}
+	window.MoveFocusToId = MoveFocusToId;
+
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+		CollapseLongStrings( '.dev_row .summary.column' );
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+
+				var watcher = new CScrollOffsetWatcher( $J('#app_reviews_hash'), OnLoadReviews, 0 );
+
+		InitPlaytimeFilterSlider();
+
+		// on Tablet wait to do this when the window is fully loaded - see OnPageLoaded()
+		ReparentAppLandingPageForSmallScreens();
+
+		
+			var usability = InitUsabilityTracker( "https:\/\/store.steampowered.com\/app\/usabilitytracking\/4963920" );
+		usability.ScheduleUpload();
+	
+		
+		SetupReviewFilterMenus();
+
+			} );
+
+	
+	function OpenTagModal()
+	{
+		ShowAppTagModal( 4963920 );
+	}
+
+</script>
+
+<div class="game_page_background game" data-miniprofile-appid=4963920>
+
+	
+			<div class="banner_open_in_steam">
+			<div data-featuretarget="open-in-desktop-client"></div>
+		</div>
+	
+	
+	<div  data-featuretarget="apppage-store-browse-cache" data-props="{&quot;rgPayloads&quot;:[{&quot;dataRequestStoreItems&quot;:null,&quot;rgStoreItems&quot;:[]}]}"></div><div  data-featuretarget="apppage-gameinterest-cache" data-props="{&quot;appid&quot;:4963920,&quot;userInterest&quot;:{&quot;owned&quot;:null,&quot;wishlist&quot;:null,&quot;ignored&quot;:null,&quot;following&quot;:null,&quot;in_queues&quot;:[],&quot;queues_with_skip&quot;:[],&quot;queue_items_remaining&quot;:[],&quot;queue_items_next_appid&quot;:[],&quot;temporarily_owned&quot;:null,&quot;queues&quot;:[],&quot;ignored_reason&quot;:null,&quot;beta_status&quot;:null}}"></div>
+	<!-- page width wrapper: gutters, max width and the horizontal bleed variable -->
+	<div id="tabletGrid" class="tablet_grid">
+
+	<div class="page_content_ctn" itemscope itemtype="http://schema.org/Product">
+
+		<meta itemprop="image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/ce00a59a1cf8307b182aadaa126709449c02a988/capsule_231x87.jpg?t=1788422775">
+					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="RUB">
+				<meta itemprop="price" content="0">
+							</div>
+		
+		<div class="page_top_area">
+						<div class="game_page_background_ctn game">
+				<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/10b3bb57c73a5cfc038991dfe48e38f649407750/page_bg_raw.jpg?t=1788422775" class="gameColor" alt="">
+				<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/10b3bb57c73a5cfc038991dfe48e38f649407750/page_bg_raw.jpg?t=1788422775" class="gameTexture" alt="">
+			</div>
+
+		<div class="page_title_area game_title_area page_content" data-gpnav="columns">
+			<div class="breadcrumbs" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+								<div class="blockbg">
+											<a href="https://store.steampowered.com/search/?category1=994&snr=1_5_9__205">All Software</a>
+																					&gt; <a href="https://store.steampowered.com/genre/Utilities/?snr=1_5_9__205">Utilities</a>
+																										&gt; <a href="https://store.steampowered.com/app/4963920/?snr=1_5_9__205"><span itemprop="name">Porthole - Local Port Sharing</span></a>
+									</div>
+				<div style="clear: left;"></div>
+							</div>
+						
+
+<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+		                      <div class="apphub_OtherSiteInfo">
+
+                    
+                <a class="btnv6_blue_hoverfade btn_medium" href="https://steamcommunity.com/app/4963920">
+                    <span>Community Hub</span>
+                </a>
+            </div>
+         		<div class="apphub_AppIcon"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/4963920/02382639d2bc461eb92345334e109fe11e65b8db.jpg"><div class="overlay"></div></div>
+		<div id="appHubAppName" class="apphub_AppName" role="heading" aria-level="1">Porthole - Local Port Sharing</div>
+		<div style="clear: both"></div>
+
+	</div>
+
+</div>
+
+											</div>
+		<div style="clear: left;"></div>
+
+
+		<div class="block game_media_and_summary_ctn">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+			</script>
+
+			
+			<div class="game_background_glow">
+				
+
+				
+								
+				
+					
+								<div id="page_header_img" class="responsive_page_header_img" style="display: none;">
+					<img style="width:100%;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/ce84efea650deec876b695490b5ca8d095b92931/header.jpg?t=1788422775" alt="Porthole - Local Port Sharing">
+				</div>
+
+				<div class="block_content page_content" id="broadcast">
+
+				
+				</div>
+				<div class="block_content page_content" id="game_highlights" data-panel="{&quot;navKey&quot;:&quot;game_highlights&quot;,&quot;flow-children&quot;:&quot;column&quot;}" >
+
+				<div class="rightcol" data-panel="{&quot;flow-children&quot;:&quot;column&quot;,&quot;navKey&quot;:&quot;rightcol&quot;}">
+					<div class="glance_ctn">
+												<div id="gameHeaderCtn" class="game_header_ctn">
+							<div id="gameHeaderImageCtn" class="game_header_image_ctn">
+								<img class="game_header_image_full" alt="" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/ce84efea650deec876b695490b5ca8d095b92931/header.jpg?t=1788422775">
+
+																<div id="appHubAppName_responsive" style="display: none;" class="apphub_AppName">Porthole - Local Port Sharing</div>
+								<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="appHeaderGridContainer" class="app_header_grid_container" style="display:none">
+
+																			<div class="grid_label">Developer</div>
+										<div class="grid_content">
+											<a href="https://store.steampowered.com/search/?developer=SeStudio&snr=1_5_9__400">SeStudio</a>, <a href="https://store.steampowered.com/search/?developer=Norbergs&snr=1_5_9__400">Norbergs</a>										</div>
+																																							<div class="grid_label">Publisher</div>
+											<div class="grid_content">
+												<a href="https://store.steampowered.com/publisher/sestudio?snr=1_5_9__400">SeStudio Publishing</a>											</div>
+																			
+																			<div class="grid_label grid_date">Released</div>
+										<div class="grid_content grid_date">
+											3 Aug, 2026										</div>
+																	</div>
+							</div>
+															<div class="game_description_snippet">
+									Play LAN and self-hosted games with faraway friends. Porthole is a proxy that forwards a port you pick to your Steam friends, so they connect as if on your LAN. No port forwarding, no public IP, no router setup. A Steam-based take on Hamachi and Radmin.								</div>
+													</div> 												<div id="glanceMidCtn" class="glance_mid_ctn">
+						<div class="glance_ctn_responsive_left">
+																													<div id="userReviews" class="user_reviews">
+
+																											<a class="user_reviews_summary_row" href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#app_reviews_hash" data-tooltip-html="90% of the 254 user reviews in the last 30 days are positive.">
+										<div class="subtitle column">Recent Reviews:</div>
+										<div class="summary column">
+											<span class="game_review_summary positive">Very Positive</span>
+																							<span class="responsive_hidden">
+													(254)
+												</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 90% of the 254 user reviews in the last 30 days are positive.											</span>
+										</div>
+									</a>
+									
+																		<a class="user_reviews_summary_row" href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#app_reviews_hash" data-tooltip-html="92% of the 1,059 user reviews for this software are positive." itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column all">
+											All Reviews:										</div>
+										<div class="summary column">
+																					<span class="game_review_summary positive" itemprop="description">Very Positive</span>
+																							<span class="responsive_hidden">
+													(1,059)
+												</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 92% of the 1,059 user reviews for this software are positive.											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="1059">
+											<meta itemprop="ratingValue" content="9">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</a>
+								</div>
+							
+															<div class="release_date">
+									<div class="subtitle column">Release Date:</div>
+									<div class="date">3 Aug, 2026</div>
+								</div>
+							
+																						<div class="dev_row">
+									<div class="subtitle column">Developer:</div>
+									<div class="summary column" id="developers_list">
+										<a href="https://store.steampowered.com/search/?developer=SeStudio&snr=1_5_9__2000">SeStudio</a>, <a href="https://store.steampowered.com/search/?developer=Norbergs&snr=1_5_9__2000">Norbergs</a>									</div>
+								</div>
+							
+																								<div class="dev_row">
+										<div class="subtitle column">Publisher:</div>
+										<div class="summary column">
+										<a href="https://store.steampowered.com/publisher/sestudio?snr=1_5_9__2000">SeStudio Publishing</a>										</div>
+									</div>
+															
+																				</div>
+
+						<div id="glanceCtnResponsiveRight" class="glance_ctn_responsive_right" data-panel="{&quot;navKey&quot;:&quot;glanceCtnResponsiveRight&quot;,&quot;flow-children&quot;:&quot;column&quot;}" >
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="responsive_block_header">Tags</div>
+									<div class="glance_tags_ctn popular_tags_ctn" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+										<div class="glance_tags_label">Popular user-defined tags for this product:</div>
+										<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="glance_tags popular_tags" data-appid="4963920">
+											<a href="https://store.steampowered.com/tags/en/Free%20to%20Play/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Free to Play												</a><a href="https://store.steampowered.com/tags/en/Utilities/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Utilities												</a><a href="https://store.steampowered.com/tags/en/Game%20Development/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Game Development												</a><a href="https://store.steampowered.com/tags/en/Online%20Co-Op/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Online Co-Op												</a><a href="https://store.steampowered.com/tags/en/Co-op/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Co-op												</a><a href="https://store.steampowered.com/tags/en/Local%20Multiplayer/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Local Multiplayer												</a><a href="https://store.steampowered.com/tags/en/Software/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Software												</a><a href="https://store.steampowered.com/tags/en/Multiplayer/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Multiplayer												</a><a href="https://store.steampowered.com/tags/en/Local%20Co-Op/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Local Co-Op												</a><a href="https://store.steampowered.com/tags/en/Experimental/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Experimental												</a><a href="https://store.steampowered.com/tags/en/Programming/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Programming												</a><a href="https://store.steampowered.com/tags/en/Pirates/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Pirates												</a><a href="https://store.steampowered.com/tags/en/Gaming/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Gaming												</a><a href="https://store.steampowered.com/tags/en/Submarine/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Submarine												</a><div class="app_tag add_button" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" onclick="ShowAppTagModal( 4963920 )">+</div>
+										</div>
+									</div>
+																						</div> 																					<div id="reviewsHeader_responsive" style="display: none;" class="responsive_block_header">Reviews</div>
+															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" id="userReviews_responsive" style="display: none;" class="user_reviews" onclick="window.location='#app_reviews_hash'">
+
+																		<a id="appReviewsAll_responsive" class="user_reviews_summary_row" href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#app_reviews_hash">
+										<div class="subtitle column all">All Reviews:</div>
+										<div class="summary column">
+																					<span class="responsive_reviewdesc_short">
+												<span class="desc_short">All Time:</span>
+																								<span class="game_review_summary positive">Very Positive</span>
+												(92% of 1,059)
+											</span>
+																				</div>
+									</a>
+
+																											<a id="appReviewsRecent_responsive" class="user_reviews_summary_row" href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#app_reviews_hash" data-tooltip-html="90% of the 254 user reviews in the last 30 days are positive.">
+										<div class="subtitle column">Recent Reviews:</div>
+										<div class="summary column">
+											<span class="responsive_reviewdesc_short">
+												<span class="desc_short">Recent:</span>
+																								<span class="game_review_summary positive">Very Positive</span>
+												(90% of 254)
+											</span>
+										</div>
+									</a>
+																	</div>
+																				</div>
+					</div>
+				</div>
+
+				<div data-panel="{&quot;maintainX&quot;:true,&quot;navKey&quot;:&quot;leftcol&quot;,&quot;flow-children&quot;:&quot;column&quot;}" class="leftcol">
+					<div class="highlight_ctn">
+													<div class="highlight_overflow">
+								<div class="gamehighlight_desktopskeleton">
+									<div class="gamehighlight_desktopskeleton_itemview"></div>
+									<div class="gamehighlight_desktopskeleton_stripitems"></div>
+									<div class="gamehighlight_desktopskeleton_stripscrollbar"></div>
+								</div>
+								<div class="gamehighlight_desktopcarousel" data-featuretarget="gamehighlight-desktopcarousel" data-props="{&quot;appName&quot;:&quot;Porthole - Local Port Sharing&quot;,&quot;trailers&quot;:[{&quot;id&quot;:1,&quot;featured&quot;:true,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257376396\/8ea6a48be313065d2d8f4d3508490e2750ede96c\/movie_232x130.jpg?t=1784528600&quot;,&quot;poster&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257376396\/8ea6a48be313065d2d8f4d3508490e2750ede96c\/movie_600x337.jpg?t=1784528600&quot;,&quot;statsURL&quot;:&quot;https:\/\/store.steampowered.com\/app\/trailerstats\/4963920\/506160777&quot;,&quot;category&quot;:3,&quot;title&quot;:&quot;Porthole - Introduction&quot;,&quot;dashManifests&quot;:[&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/4963920\/506160777\/ec912024878cfa4c98e6e30b00fb88903c800b4f\/1784526466\/dash_av1.mpd?t=1784528600&quot;,&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/4963920\/506160777\/ec912024878cfa4c98e6e30b00fb88903c800b4f\/1784526466\/dash_h264.mpd?t=1784528600&quot;],&quot;hlsManifest&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/4963920\/506160777\/ec912024878cfa4c98e6e30b00fb88903c800b4f\/1784526466\/hls_264_master.m3u8?t=1784528600&quot;}],&quot;screenshots&quot;:[{&quot;name&quot;:&quot;2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b_ss_2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b\/ss_2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b\/ss_2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b\/ss_2d3b67ecb25cdd3b2906e11ab15be50ef537ef7b.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Create a lobby - Open Porthole and start a lobby in one click&quot;},{&quot;name&quot;:&quot;e64823afd4a4986d08e52336145025b19f988df8_ss_e64823afd4a4986d08e52336145025b19f988df8.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e64823afd4a4986d08e52336145025b19f988df8\/ss_e64823afd4a4986d08e52336145025b19f988df8.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e64823afd4a4986d08e52336145025b19f988df8\/ss_e64823afd4a4986d08e52336145025b19f988df8.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e64823afd4a4986d08e52336145025b19f988df8\/ss_e64823afd4a4986d08e52336145025b19f988df8.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Configure ports - Auto-detect ports your game uses, or add them yourself&quot;},{&quot;name&quot;:&quot;ec29382fa8932cad61dd7c1118d830658c68b836_ss_ec29382fa8932cad61dd7c1118d830658c68b836.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/ec29382fa8932cad61dd7c1118d830658c68b836\/ss_ec29382fa8932cad61dd7c1118d830658c68b836.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/ec29382fa8932cad61dd7c1118d830658c68b836\/ss_ec29382fa8932cad61dd7c1118d830658c68b836.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/ec29382fa8932cad61dd7c1118d830658c68b836\/ss_ec29382fa8932cad61dd7c1118d830658c68b836.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Invite your friends - Share one short code, or invite them straight from Steam&quot;},{&quot;name&quot;:&quot;5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a_ss_5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a\/ss_5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a\/ss_5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a\/ss_5a7d8d4c0fc6d871e4b3dca5a09e97f78bc8de5a.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Friends approve the ports - Each friend approves every port. Nothing opens without consent&quot;},{&quot;name&quot;:&quot;9fc0cf39189675375e9f710ac9ad6b4ef409b396_ss_9fc0cf39189675375e9f710ac9ad6b4ef409b396.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/9fc0cf39189675375e9f710ac9ad6b4ef409b396\/ss_9fc0cf39189675375e9f710ac9ad6b4ef409b396.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/9fc0cf39189675375e9f710ac9ad6b4ef409b396\/ss_9fc0cf39189675375e9f710ac9ad6b4ef409b396.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/9fc0cf39189675375e9f710ac9ad6b4ef409b396\/ss_9fc0cf39189675375e9f710ac9ad6b4ef409b396.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Play together - Connect as if on your LAN. No port forwarding, no setup&quot;},{&quot;name&quot;:&quot;082ee7f69a973817faf7765a48eb2555b379dd31_ss_082ee7f69a973817faf7765a48eb2555b379dd31.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/082ee7f69a973817faf7765a48eb2555b379dd31\/ss_082ee7f69a973817faf7765a48eb2555b379dd31.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/082ee7f69a973817faf7765a48eb2555b379dd31\/ss_082ee7f69a973817faf7765a48eb2555b379dd31.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/082ee7f69a973817faf7765a48eb2555b379dd31\/ss_082ee7f69a973817faf7765a48eb2555b379dd31.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;You approve every port - Ports open only after you approve them, never to the public internet&quot;},{&quot;name&quot;:&quot;b6aed44c1fd122f02e4355ff20f148a38eca8de2_ss_b6aed44c1fd122f02e4355ff20f148a38eca8de2.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/b6aed44c1fd122f02e4355ff20f148a38eca8de2\/ss_b6aed44c1fd122f02e4355ff20f148a38eca8de2.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/b6aed44c1fd122f02e4355ff20f148a38eca8de2\/ss_b6aed44c1fd122f02e4355ff20f148a38eca8de2.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/b6aed44c1fd122f02e4355ff20f148a38eca8de2\/ss_b6aed44c1fd122f02e4355ff20f148a38eca8de2.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;No port forwarding - Works behind NAT and CGNAT. No public IP, no router setup&quot;},{&quot;name&quot;:&quot;5f56edead709e034c118a0cc4b864fdad044bab1_ss_5f56edead709e034c118a0cc4b864fdad044bab1.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5f56edead709e034c118a0cc4b864fdad044bab1\/ss_5f56edead709e034c118a0cc4b864fdad044bab1.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5f56edead709e034c118a0cc4b864fdad044bab1\/ss_5f56edead709e034c118a0cc4b864fdad044bab1.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/5f56edead709e034c118a0cc4b864fdad044bab1\/ss_5f56edead709e034c118a0cc4b864fdad044bab1.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;Kick, ban, stay in control - Remove or ban anyone from your lobby, instantly&quot;},{&quot;name&quot;:&quot;825bf97c667ea031fa009088e909b285760b00fe_ss_825bf97c667ea031fa009088e909b285760b00fe.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/825bf97c667ea031fa009088e909b285760b00fe\/ss_825bf97c667ea031fa009088e909b285760b00fe.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/825bf97c667ea031fa009088e909b285760b00fe\/ss_825bf97c667ea031fa009088e909b285760b00fe.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/825bf97c667ea031fa009088e909b285760b00fe\/ss_825bf97c667ea031fa009088e909b285760b00fe.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;#decorative-only&quot;},{&quot;name&quot;:&quot;bb6d33d0b6e94988f10744aa621e5762f4dbf73e_ss_bb6d33d0b6e94988f10744aa621e5762f4dbf73e.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/bb6d33d0b6e94988f10744aa621e5762f4dbf73e\/ss_bb6d33d0b6e94988f10744aa621e5762f4dbf73e.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/bb6d33d0b6e94988f10744aa621e5762f4dbf73e\/ss_bb6d33d0b6e94988f10744aa621e5762f4dbf73e.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/bb6d33d0b6e94988f10744aa621e5762f4dbf73e\/ss_bb6d33d0b6e94988f10744aa621e5762f4dbf73e.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;#decorative-only&quot;},{&quot;name&quot;:&quot;27d04c64531598632251f6a448d4102d764a4bf3_ss_27d04c64531598632251f6a448d4102d764a4bf3.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/27d04c64531598632251f6a448d4102d764a4bf3\/ss_27d04c64531598632251f6a448d4102d764a4bf3.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/27d04c64531598632251f6a448d4102d764a4bf3\/ss_27d04c64531598632251f6a448d4102d764a4bf3.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/27d04c64531598632251f6a448d4102d764a4bf3\/ss_27d04c64531598632251f6a448d4102d764a4bf3.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;#decorative-only&quot;},{&quot;name&quot;:&quot;e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0_ss_e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0\/ss_e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0\/ss_e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0\/ss_e796c46a0d4c69cc6bf24a4174f7fc6f5bc561f0.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;#decorative-only&quot;},{&quot;name&quot;:&quot;284fef7cce20da97311c638bca55ab5540f981a3_ss_284fef7cce20da97311c638bca55ab5540f981a3.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/284fef7cce20da97311c638bca55ab5540f981a3\/ss_284fef7cce20da97311c638bca55ab5540f981a3.116x65.jpg?t=1788422775&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/284fef7cce20da97311c638bca55ab5540f981a3\/ss_284fef7cce20da97311c638bca55ab5540f981a3.600x338.jpg?t=1788422775&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4963920\/284fef7cce20da97311c638bca55ab5540f981a3\/ss_284fef7cce20da97311c638bca55ab5540f981a3.1920x1080.jpg?t=1788422775&quot;,&quot;altText&quot;:&quot;#decorative-only&quot;}]}"></div>
+							</div>
+											</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+
+			
+			
+
+			
+		</div>
+
+
+		</div>
+			<div class="queue_and_playtime">
+				<div class="game_background_lighten">
+					<div class="game_background_lighten_border"></div>
+				</div>
+									<div class="queue_overflow_ctn">
+													<div class="queue_ctn">
+																<div id="queueActionsCtn" class="queue_actions_ctn">
+									<p><a href="https://store.steampowered.com/login/?redir=app%2F4963920&snr=1_5_9_">Sign in</a> to add this item to your wishlist, follow it, or mark it as ignored</p>
+																			<div id="shareBtn"><a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowNavigatorShare()"><span><img src="https://store.fastly.steamstatic.com/public/shared/images/icon_share_ios.svg"></span></a></div>
+																	</div>
+							</div>
+						
+												<div id="rowBtnActions" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" style="display: none;"></div>
+
+					</div>
+				
+				
+				
+																												
+				
+								
+				<div id="purchaseOptionsContent" class="purchase_options_content" style="display: none;">
+					<!-- game_area_purchase goes here -->
+				</div>
+			</div>
+
+		
+		<div class="page_content middle_page" data-panel="[]" >
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
+					
+					<div id="responsive_apppage_details_left_ctn"></div>
+
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+					<!-- testing a banner on Desktop to open the current page in the desktop Steam client.  When that banner is displayed this section should be hidden. -->
+																		
+
+
+
+
+
+					
+					
+					
+
+												<div class="responsive_block_header responsive_apppage_details_left">Features</div>
+							<div class="block responsive_apppage_details_left" id="category_block">
+								<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="game_area_features_list_ctn">
+									<a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=23&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_cloud.png" alt=""></div><div class="label">Steam Cloud</div></a>										<div class="game_area_details_specs_ctn learning_about">
+											<div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_info.png"></div>
+											<div class="label">Profile Features Limited&nbsp;
+											<span class="tooltip" data-tooltip-html="This product is not currently eligible to appear in certain showcases on your Steam Profile, and does not contribute to global Achievement or game collector counts.">
+												<img src="https://store.fastly.steamstatic.com/public/shared/images/ico/icon_questionmark.png" alt="">
+											</span></div>
+
+										</div>
+										
+<div  data-featuretarget="store-sidebar-accessibility-info" data-props="{&quot;bAccessibilityResizableUI&quot;:true,&quot;bAccessibilitySubtitles&quot;:false,&quot;bAccessibilityColorAlternatives&quot;:false,&quot;bAccessibilityCameraComfort&quot;:false,&quot;bAccessibilityBackgroundVolumeControls&quot;:false,&quot;bAccessibilityStereoSound&quot;:false,&quot;bAccessibilitySurroundSound&quot;:false,&quot;bAccessibilityNarratedMenus&quot;:false,&quot;bAccessibilityChatSpeechtoText&quot;:false,&quot;bAccessibilityChatTexttoSpeech&quot;:false,&quot;bAccessibilityPlayableWithoutQuicktimeEvents&quot;:true,&quot;bAccessibilityKeyboardOnlyOption&quot;:false,&quot;bAccessibilityMouseOnlyOption&quot;:false,&quot;bAccessibilityTouchOnlyOption&quot;:false,&quot;bAccessibilityDifficultyLevels&quot;:false,&quot;bAccessibilitySaveAnytime&quot;:true,&quot;bAccessibilityPlayableAtYourOwnPace&quot;:true,&quot;bAccessibilityPlayableWithoutVision&quot;:false,&quot;bAccessibilityContrastControls&quot;:false}"></div>								</div>
+								
+								<div data-featuretarget="store-sidebar-controller-support-info" data-props="{&quot;unAppID&quot;:4963920,&quot;bFullXboxControllerSupport&quot;:false,&quot;bPartialXboxControllerSupport&quot;:false,&quot;bPS4ControllerSupport&quot;:false,&quot;bPS4ControllerBTSupport&quot;:false,&quot;bPS5ControllerSupport&quot;:false,&quot;bPS5ControllerBTSupport&quot;:false,&quot;bSteamInputAPISupport&quot;:false,&quot;bNoKeyboardSupport&quot;:false,&quot;bGamepadPreferred&quot;:false,&quot;bControllerSupportWizardComplete&quot;:true,&quot;bHasXbox&quot;:null,&quot;bHasPS4&quot;:null,&quot;bHasPS5&quot;:null,&quot;bHasOther&quot;:false}"></div>
+								
+								
+								
+								
+								
+								
+															</div>
+																			<div class="block responsive_apppage_details_right">
+								<div class="block_title" id="LanguagesHeader">
+									Languages<span class="responsive_hidden">:</span>
+								</div>
+
+								
+<div id="bannerLanguages" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="responsive_banner_link" style="display: none" onclick="ToggleBannerContentVisibility('#languageTable', '#expandLanguageBtn')">
+	<div class="responsive_banner_link_title">
+		English and 29 more	</div>
+	<div id="expandLanguageBtn" class="expand_section"></div>
+</div>
+<div id="languageTable">
+
+<table  class="game_language_options" cellpadding="0" cellspacing="0">
+	<tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">Interface</th>
+		<th class="checkcol">Full Audio</th>
+		<th class="checkcol">Subtitles</th>
+	</tr>
+
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				English			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				French			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Italian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				German			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Spanish - Spain			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Arabic			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Bulgarian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Czech			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Danish			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Dutch			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Finnish			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Greek			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Hungarian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Indonesian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Japanese			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Korean			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Norwegian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Polish			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Portuguese - Brazil			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Portuguese - Portugal			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Romanian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Russian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Simplified Chinese			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Spanish - Latin America			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Swedish			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Thai			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Traditional Chinese			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Turkish			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Ukrainian			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+			<tr style="display: none;" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				Vietnamese			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+	</table>
+	<script type="text/javascript">
+		function ShowAllLanguages( elLink )
+		{
+			if ( typeof GetUsabilityTracker !== 'undefined' )
+				GetUsabilityTracker().AddEvent( 1002 );
+
+			$J('table.game_language_options tr').show();
+			$J( elLink ).hide();
+			return false;
+		}
+	</script>
+	<a class="all_languages" onclick="return ShowAllLanguages( this )">See all 30 supported languages</a>
+
+
+</div>
+
+							</div>
+											
+																<div class="block responsive_apppage_details_right">
+									<div class="shared_game_rating">
+			<div class="game_rating_title">Content</div>
+				<div class="game_rating_descriptors">
+															<div class="block_title">Includes Interactive Elements</div>
+						<p class="descriptorText">In-game chat, Online interactivity</p>
+													</div>
+			</div>
+								</div>
+					
+					
+					
+											<div id="appDetailsUnderlinedLinks" class="block responsive_apppage_details_left game_details underlined_links">
+							<div class="block_content">
+								<div class="block_content_inner">
+									<div id="genresAndManufacturer" class="details_block">
+
+			<b>Title:</b> Porthole - Local Port Sharing<br>
+	
+				<b>Genre:</b> <span data-panel="{&quot;flow-children&quot;:&quot;row&quot;}"><a href="https://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__408">Free To Play</a>, <a href="https://store.steampowered.com/genre/Utilities/?snr=1_5_9__408">Utilities</a>, <a href="https://store.steampowered.com/genre/Web%20Publishing/?snr=1_5_9__408">Web Publishing</a>, <a href="https://store.steampowered.com/genre/Game%20Development/?snr=1_5_9__408">Game Development</a></span><br>
+			
+			<div class="dev_row">
+			<b>Developer:</b>
+
+				<a href="https://store.steampowered.com/search/?developer=SeStudio&snr=1_5_9__408">SeStudio</a>, <a href="https://store.steampowered.com/search/?developer=Norbergs&snr=1_5_9__408">Norbergs</a>
+		</div>
+	
+			<div class="dev_row">
+			<b>Publisher:</b>
+
+				<a href="https://store.steampowered.com/publisher/sestudio?snr=1_5_9__408">SeStudio Publishing</a>
+		</div>
+	
+			
+	            <b>Release Date:</b> 3 Aug, 2026<br>
+        
+            	</div>
+
+
+<div class="details_block" style="padding-top: 14px;">
+
+				<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fporthole.sestudio.org%2F" target="_blank" rel="noreferrer  noopener" >
+			Visit the website <img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+		</a>
+	
+					<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2FvTN6r5RBwH" target="_blank" rel=" noopener" class="ttip" data-tooltip-text="https://discord.gg/vTN6r5RBwH">
+					
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="presentation">
+				<path d="M823,229.3c-58.9-27-121-46.1-184.9-56.9-8.7,15.6-16.6,31.7-23.7,48.1-68-10.2-137.1-10.2-205.1,0-7-16.4-14.9-32.5-23.7-48.1-63.9,10.9-126.1,30.1-185,57-117,173.1-148.7,341.9-132.8,508.3h0c68.5,50.6,145.2,89.1,226.7,113.8,18.4-24.7,34.6-50.9,48.6-78.3-26.5-9.9-52.1-22.1-76.5-36.5,6.4-4.7,12.7-9.4,18.7-14.1,143.6,67.5,309.7,67.5,453.3,0,6.1,5,12.4,9.8,18.7,14.1-24.4,14.4-50,26.7-76.6,36.6,13.9,27.4,30.2,53.6,48.6,78.2,81.6-24.6,158.3-63.1,226.9-113.7h0c18.6-193-31.8-360.2-133.2-508.5h0ZM363.2,635.4c-44.2,0-80.7-40.1-80.7-89.4s35.2-89.8,80.6-89.8,81.5,40.5,80.8,89.8c-.8,49.3-35.6,89.4-80.6,89.4h-.1ZM660.8,635.4c-44.3,0-80.6-40.1-80.6-89.4s35.2-89.8,80.6-89.8,81.3,40.5,80.6,89.8c-.8,49.3-35.5,89.4-80.6,89.4Z"/>
+			</svg>
+							<span class="social_account">Discord</span>
+					<img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+				</a>
+						
+	
+	
+	
+	
+	
+	
+	
+			<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/?appids=4963920&amp;snr=1_5_9__408" target="_blank" rel="noreferrer" >
+			View update history		</a>
+		<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/app/4963920?snr=1_5_9__408" target="_blank" rel="noreferrer" >
+			Read related news		</a>
+	
+				<a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/app/4963920/discussions/" target="_blank" rel="noreferrer" >
+			View discussions		</a>
+	
+    
+	        <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/actions/Search?T=ClanAccount&K=Porthole%20-%20Local%20Port%20Sharing">
+            Find Community Groups        </a>
+    </div>
+								</div>
+							</div>
+													</div>
+					
+																		<div id="shareEmbedRow" class="block responsive_apppage_details_left" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+								<a class="btnv6_blue_hoverfade btn_medium" href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#" onclick="ShowEmbedWidget(4963920); return false;"><span>Embed</span></a>
+								<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(4963920)"><span data-tooltip-text="Report this Product" aria-label="Report this Product"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+							</div>
+						
+						<div id="reportBtn" style="display:none;"><a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(4963920)"><span><img src="https://store.fastly.steamstatic.com/public/shared/images/icon_report.svg" alt="Report this Product"></span></a></div>
+					
+					
+															
+											<div id="appLinksAndInfoCtn" style="display:none;">
+							<div class="responsive_block_header">Links &amp; info</div>
+							<div id="appLinksAndInfo" class="game_page_autocollapse" style="max-height: 180px;"></div>
+						</div>
+					
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column"  data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
+
+					
+										
+					
+					<div id="game_area_purchase" class="game_area_purchase">
+						
+																			
+
+						
+																															<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+
+	<div class="game_area_purchase_game  " role="region" aria-labelledby="game_area_purchase_section_free_4963920">
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span></div>
+				<h2 id="game_area_purchase_section_free_4963920" class="title">
+			Use Porthole - Local Port Sharing		</h2>
+						<div class="game_purchase_action">
+			<div class="game_purchase_action_bg">
+
+									<div class="game_purchase_price price">
+						Free					</div>
+				
+									<div id="freeGameBtn" class="btn_addtocart">
+						
+							<a class="btn_green_steamui btn_medium" href="javascript:ShowGotSteamModal('steam://run/4963920', &quot;Porthole - Local Port Sharing&quot;, 'Launch this software now' )">
+								<span>Free</span>
+							</a>
+											</div>
+											</div>
+		</div>
+	</div>
+<div id="gameAreaDLCSection" class="game_area_dlc_section">
+
+	<h2 class="gradientbg" aria-label="Downloadable Content For This Software">Downloadable Content For This Software<span class="note"><a href="https://store.steampowered.com/dlc/4963920/Porthole__Local_Port_Sharing/?snr=1_5_9__1061">Browse all <em>(1)</em></a></span></h2>
+
+	
+			<div class="game_area_dlc_list">
+			<form name="add_all_dlc_to_cart" action="https://store.steampowered.com/cart/?snr=1_5_9_" method="POST">
+				<input type="hidden" name="action" value="add_to_cart">
+				<input type="hidden" name="sessionid" value="4af70ceb7945edcdb667b8a8">
+
+				<div class="tableView">
+											<div class="gameDlcBlocks">
+										<a class="game_area_dlc_row  odd ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_4995560"
+						href="https://store.steampowered.com/app/4995560/Porthole__Supporter_Pack/?snr=1_5_9__405"
+						 data-ds-appid="4995560" data-ds-itemkey="App_4995560" data-ds-tagids="[87,13906,113,1685,3841,3843,3859]" data-ds-crtrids="[32869227]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:4995560,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )"						data-ds-steam-deck-compat-handled="true"
+					>
+						
+						<div class="game_area_dlc_name">
+														Porthole - Supporter Pack						</div>
+
+						<div class="game_area_dlc_price">
+																																		<div class="discount_block discount_block_inline" data-price-final="21600" data-bundlediscount="0" data-discount="10" role="link" aria-label="10% off. 240 руб. normally, discounted to 216 руб."><div class="discount_pct">-10%</div><div class="discount_prices"><div class="discount_original_price">240 руб.</div><div class="discount_final_price">216 руб.</div></div></div>																														</div>
+													<input type="hidden" name="subid[]" value="1732932">
+												</a>
+						
+																										<div id="dlc_purchase_action" class="game_purchase_action game_purchase_action_bg"
+							     style="">
+								<div class="game_purchase_price price">
+									216 руб.								</div>
+								<div class="btn_addtocart">
+
+																			<a class="btn_green_steamui btn_medium" href="javascript:addAllDlcToCart();">
+											<span>Add all DLC to Cart</span>
+										</a>
+									
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+																	</div>
+							
+			</div> <!-- tableView -->
+
+			<div style="clear: right;"></div>
+
+			</form>
+		</div>
+	
+	</div>
+
+												
+					</div>
+					<!-- game_area_purchase -->
+
+					
+											<div id="bannerCommunity" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="responsive_banner_link" style="display: none" onclick="window.location='https://steamcommunity.com/app/4963920'">
+							<div class="responsive_banner_link_title responsive_chevron_right">View Community Hub</div>
+						</div>
+					
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+					
+					
+																								<script type="text/javascript">
+							var StoreDefaults = {"PartnerEventStore":[{"gid":"680760490643685720","clan_steamid":"103582791475739292","event_name":"Porthole 2.0.0: macOS, a lobby browser, and more","event_type":14,"appid":4963920,"server_address":null,"server_password":null,"rtime32_start_time":1788396900,"rtime32_end_time":1788400801,"comment_count":0,"creator_steamid":"0","last_update_steamid":"0","event_notes":"see announcement body","jsondata":"{\"localized_subtitle\":[\"Our biggest update yet\",\"Unser bisher gr\u00f6\u00dftes Update\",\"Notre plus grosse mise \u00e0 jour \u00e0 ce jour\",\"Il nostro aggiornamento pi\u00f9 grande di sempre\",\"\uc5ed\ub300 \ucd5c\ub300 \uaddc\ubaa8\uc758 \uc5c5\ub370\uc774\ud2b8\",\"Nuestra mayor actualizaci\u00f3n hasta la fecha\",\"\u6211\u4eec\u8fc4\u4eca\u4e3a\u6b62\u6700\u5927\u7684\u4e00\u6b21\u66f4\u65b0\",\"\u6211\u5011\u81f3\u4eca\u6700\u5927\u7684\u4e00\u6b21\u66f4\u65b0\",\"\u041d\u0430\u0448\u0435 \u0441\u0430\u043c\u043e\u0435 \u043a\u0440\u0443\u043f\u043d\u043e\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435\",\"\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e04\u0e23\u0e31\u0e49\u0e07\u0e43\u0e2b\u0e0d\u0e48\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14\u0e02\u0e2d\u0e07\u0e40\u0e23\u0e32\u0e40\u0e17\u0e48\u0e32\u0e17\u0e35\u0e48\u0e40\u0e04\u0e22\u0e21\u0e35\u0e21\u0e32\",\"\u904e\u53bb\u6700\u5927\u306e\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\",\"A nossa maior atualiza\u00e7\u00e3o at\u00e9 agora\",\"Nasza najwi\u0119ksza aktualizacja jak dot\u0105d\",\"Vores hidtil st\u00f8rste opdatering\",\"Onze grootste update tot nu toe\",\"T\u00e4h\u00e4nastisista suurin p\u00e4ivityksemme\",\"V\u00e5r st\u00f8rste oppdatering til n\u00e5\",\"V\u00e5r st\u00f6rsta uppdatering hittills\",\"Eddigi legnagyobb friss\u00edt\u00e9s\u00fcnk\",\"Na\u0161e dosud nejv\u011bt\u0161\u00ed aktualizace\",\"Cea mai mare actualizare de pana acum\",\"\u015eimdiye kadarki en b\u00fcy\u00fck g\u00fcncellememiz\",\"Nossa maior atualiza\u00e7\u00e3o at\u00e9 agora\",\"\u041d\u0430\u0439-\u0433\u043e\u043b\u044f\u043c\u0430\u0442\u0430 \u043d\u0438 \u0430\u043a\u0442\u0443\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f \u0434\u043e\u0441\u0435\u0433\u0430\",\"\u0397 \u03bc\u03b5\u03b3\u03b1\u03bb\u03cd\u03c4\u03b5\u03c1\u03b7 \u03b5\u03bd\u03b7\u03bc\u03ad\u03c1\u03c9\u03c3\u03ae \u03bc\u03b1\u03c2 \u03bc\u03ad\u03c7\u03c1\u03b9 \u03c4\u03ce\u03c1\u03b1\",\"\u0623\u0643\u0628\u0631 \u062a\u062d\u062f\u064a\u062b\u0627\u062a\u0646\u0627 \u062d\u062a\u0649 \u0627\u0644\u0622\u0646\",\"\u041d\u0430\u0448\u0435 \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448\u0435 \u043e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0434\u043e\u0442\u0435\u043f\u0435\u0440\",\"Nuestra actualizaci\u00f3n m\u00e1s grande hasta ahora\",\"B\u1ea3n c\u1eadp nh\u1eadt l\u1edbn nh\u1ea5t c\u1ee7a ch\u00fang t\u00f4i t\u1eeb tr\u01b0\u1edbc \u0111\u1ebfn nay\",null,\"Pembaruan terbesar kami sejauh ini\",\"Kemas kini terbesar kami setakat ini\"],\"localized_summary\":[\"Now on macOS, plus a public lobby browser, broadcast mode, a fresh new look, and faster updates from here.\",\"Jetzt auf macOS, dazu ein \u00f6ffentlicher Lobby-Browser, ein Broadcast-Modus, ein frischer neuer Look und ab jetzt schnellere Updates.\",\"Maintenant sur macOS, avec en plus un navigateur de salons public, un mode de diffusion, un tout nouveau look et des mises \u00e0 jour plus rapides d\u00e9sormais.\",\"Ora su macOS, pi\u00f9 un elenco pubblico delle lobby, la modalit\u00e0 broadcast, un look tutto nuovo e aggiornamenti pi\u00f9 rapidi d'ora in poi.\",\"\uc774\uc81c macOS\uc5d0\uc11c\ub3c4, \uc5ec\uae30\uc5d0 \uacf5\uac1c \ub85c\ube44 \ubaa9\ub85d, \ube0c\ub85c\ub4dc\uce90\uc2a4\ud2b8 \ubaa8\ub4dc, \uc0b0\ub73b\ud55c \uc0c8 \ub514\uc790\uc778, \uadf8\ub9ac\uace0 \uc55e\uc73c\ub85c \ub354 \ube68\ub77c\uc9c0\ub294 \uc5c5\ub370\uc774\ud2b8\uae4c\uc9c0.\",\"Ahora en macOS, adem\u00e1s de un explorador p\u00fablico de salas, modo de difusi\u00f3n, un aspecto renovado y actualizaciones m\u00e1s r\u00e1pidas a partir de ahora.\",\"\u73b0\u5df2\u767b\u9646 macOS\uff0c\u6b64\u5916\u8fd8\u6709\u516c\u5f00\u623f\u95f4\u5217\u8868\u3001\u5e7f\u64ad\u6a21\u5f0f\u3001\u7115\u7136\u4e00\u65b0\u7684\u5916\u89c2\uff0c\u4ee5\u53ca\u4ece\u6b64\u66f4\u5feb\u7684\u66f4\u65b0\u3002\",\"\u73fe\u5df2\u767b\u9678 macOS\uff0c\u6b64\u5916\u9084\u6709\u516c\u958b\u623f\u9593\u5217\u8868\u3001\u5ee3\u64ad\u6a21\u5f0f\u3001\u7165\u7136\u4e00\u65b0\u7684\u5916\u89c0\uff0c\u4ee5\u53ca\u5f9e\u6b64\u66f4\u5feb\u7684\u66f4\u65b0\u3002\",\"\u0422\u0435\u043f\u0435\u0440\u044c \u043d\u0430 macOS, \u0430 \u0435\u0449\u0451 \u043f\u0443\u0431\u043b\u0438\u0447\u043d\u044b\u0439 \u0441\u043f\u0438\u0441\u043e\u043a \u043b\u043e\u0431\u0431\u0438, \u0440\u0435\u0436\u0438\u043c \u0432\u0435\u0449\u0430\u043d\u0438\u044f, \u0441\u0432\u0435\u0436\u0438\u0439 \u043e\u0431\u043b\u0438\u043a \u0438 \u0431\u043e\u043b\u0435\u0435 \u0431\u044b\u0441\u0442\u0440\u044b\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u0432 \u0434\u0430\u043b\u044c\u043d\u0435\u0439\u0448\u0435\u043c.\",\"\u0e15\u0e2d\u0e19\u0e19\u0e35\u0e49\u0e21\u0e32\u0e17\u0e35\u0e48 macOS \u0e41\u0e25\u0e49\u0e27 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e25\u0e47\u0e2d\u0e1a\u0e1a\u0e35\u0e49\u0e2a\u0e32\u0e18\u0e32\u0e23\u0e13\u0e30 \u0e42\u0e2b\u0e21\u0e14\u0e1a\u0e23\u0e2d\u0e14\u0e41\u0e04\u0e2a\u0e15\u0e4c \u0e2b\u0e19\u0e49\u0e32\u0e15\u0e32\u0e43\u0e2b\u0e21\u0e48\u0e2a\u0e14\u0e43\u0e2a \u0e41\u0e25\u0e30\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e17\u0e35\u0e48\u0e40\u0e23\u0e47\u0e27\u0e02\u0e36\u0e49\u0e19\u0e19\u0e31\u0e1a\u0e08\u0e32\u0e01\u0e19\u0e35\u0e49\",\"macOS \u306b\u5bfe\u5fdc\u3057\u3001\u516c\u958b\u30ed\u30d3\u30fc\u4e00\u89a7\u3001\u30d6\u30ed\u30fc\u30c9\u30ad\u30e3\u30b9\u30c8\u30e2\u30fc\u30c9\u3001\u4e00\u65b0\u3055\u308c\u305f\u30c7\u30b6\u30a4\u30f3\u3001\u305d\u3057\u3066\u3053\u308c\u304b\u3089\u306f\u3088\u308a\u901f\u3044\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\u3092\u304a\u5c4a\u3051\u3057\u307e\u3059\u3002\",\"Agora no macOS, mais um navegador p\u00fablico de salas, modo de difus\u00e3o, um visual totalmente novo e atualiza\u00e7\u00f5es mais r\u00e1pidas a partir de agora.\",\"Teraz na macOS, a do tego publiczna lista lobby, tryb rozg\u0142aszania, \u015bwie\u017cy wygl\u0105d i szybsze aktualizacje od teraz.\",\"Nu p\u00e5 macOS, plus en offentlig lobbybrowser, broadcast-tilstand, et friskt nyt look og hurtigere opdateringer fremover.\",\"Nu op macOS, plus een openbare lobbybrowser, broadcast-modus, een frisse nieuwe look en voortaan snellere updates.\",\"Nyt macOS:ll\u00e4, lis\u00e4ksi julkinen aulaselain, l\u00e4hiverkkol\u00e4hetys, raikas uusi ulkoasu ja t\u00e4st\u00e4 l\u00e4htien nopeammat p\u00e4ivitykset.\",\"N\u00e5 p\u00e5 macOS, pluss en offentlig lobbyliste, kringkastingsmodus, et helt nytt utseende, og raskere oppdateringer fra n\u00e5 av.\",\"Nu p\u00e5 macOS, plus en offentlig lobbylista, broadcast-l\u00e4ge, ett fr\u00e4scht nytt utseende och snabbare uppdateringar fram\u00f6ver.\",\"Mostant\u00f3l macOS-en is, r\u00e1ad\u00e1sul nyilv\u00e1nos lobbib\u00f6ng\u00e9sz\u0151vel, sz\u00f3r\u00e1s m\u00f3ddal, vadonat\u00faj k\u00fcls\u0151vel, \u00e9s innent\u0151l gyorsabb friss\u00edt\u00e9sekkel.\",\"Nyn\u00ed na macOS, k tomu ve\u0159ejn\u00fd prohl\u00ed\u017ee\u010d lobby, re\u017eim vys\u00edl\u00e1n\u00ed, sv\u011b\u017e\u00ed nov\u00fd vzhled a od te\u010f rychlej\u0161\u00ed aktualizace.\",\"Acum pe macOS, plus o list\u0103 public\u0103 de lobby-uri, modul de difuzare, un aspect proaspat si actualizari mai rapide de acum inainte.\",\"Art\u0131k macOS'ta; ayr\u0131ca herkese a\u00e7\u0131k bir lobi listesi, yay\u0131n modu, tazelenmi\u015f bir g\u00f6r\u00fcn\u00fcm ve bundan sonra daha h\u0131zl\u0131 g\u00fcncellemeler.\",\"Agora no macOS, al\u00e9m de um navegador de salas p\u00fablico, modo broadcast, um visual novo e atualiza\u00e7\u00f5es mais r\u00e1pidas daqui em diante.\",\"\u0412\u0435\u0447\u0435 \u0438 \u043d\u0430 macOS, \u043f\u043b\u044e\u0441 \u043f\u0443\u0431\u043b\u0438\u0447\u0435\u043d \u0441\u043f\u0438\u0441\u044a\u043a \u0441 \u043b\u043e\u0431\u0438\u0442\u0430, \u0440\u0435\u0436\u0438\u043c \u043d\u0430 \u0438\u0437\u043b\u044a\u0447\u0432\u0430\u043d\u0435, \u0441\u0432\u0435\u0436 \u043d\u043e\u0432 \u043e\u0431\u043b\u0438\u043a \u0438 \u043f\u043e-\u0431\u044a\u0440\u0437\u0438 \u0430\u043a\u0442\u0443\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u043e\u0442\u0441\u0435\u0433\u0430 \u043d\u0430\u0442\u0430\u0442\u044a\u043a.\",\"\u03a4\u03ce\u03c1\u03b1 \u03ba\u03b1\u03b9 \u03c3\u03b5 macOS, \u03bc\u03b1\u03b6\u03af \u03bc\u03b5 \u03b4\u03b7\u03bc\u03cc\u03c3\u03b9\u03b1 \u03bb\u03af\u03c3\u03c4\u03b1 \u03bb\u03cc\u03bc\u03c0\u03b9, \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03af\u03b1 \u03b5\u03ba\u03c0\u03bf\u03bc\u03c0\u03ae\u03c2, \u03c6\u03c1\u03ad\u03c3\u03ba\u03b9\u03b1 \u03bd\u03ad\u03b1 \u03b5\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03ba\u03b1\u03b9 \u03c4\u03b1\u03c7\u03cd\u03c4\u03b5\u03c1\u03b5\u03c2 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03b9\u03c2 \u03b1\u03c0\u03cc \u03b5\u03b4\u03ce \u03ba\u03b1\u03b9 \u03c0\u03ad\u03c1\u03b1.\",\"\u0645\u062a\u0648\u0641\u0651\u0631 \u0627\u0644\u0622\u0646 \u0639\u0644\u0649 macOS\u060c \u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0645\u062a\u0635\u0641\u0651\u062d \u0631\u062f\u0647\u0627\u062a \u0639\u0627\u0645\u060c \u0648\u0648\u0636\u0639 \u0627\u0644\u0628\u062b\u060c \u0648\u0645\u0638\u0647\u0631 \u062c\u062f\u064a\u062f \u0645\u0646\u0639\u0634\u060c \u0648\u062a\u062d\u062f\u064a\u062b\u0627\u062a \u0623\u0633\u0631\u0639 \u0645\u0646 \u0627\u0644\u0622\u0646 \u0641\u0635\u0627\u0639\u062f\u0627\u064b.\",\"\u0422\u0435\u043f\u0435\u0440 \u043d\u0430 macOS, \u0430 \u0449\u0435 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0439 \u0441\u043f\u0438\u0441\u043e\u043a \u043b\u043e\u0431\u0456, \u0440\u0435\u0436\u0438\u043c \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0456\u0457, \u0441\u0432\u0456\u0436\u0438\u0439 \u0432\u0438\u0433\u043b\u044f\u0434 \u0456 \u0448\u0432\u0438\u0434\u0448\u0456 \u043e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u043d\u0430\u0434\u0430\u043b\u0456.\",\"Ahora en macOS, adem\u00e1s de un explorador p\u00fablico de salas, modo de difusi\u00f3n, un aspecto totalmente nuevo y, de aqu\u00ed en adelante, actualizaciones m\u00e1s r\u00e1pidas.\",\"Gi\u1edd \u0111\u00e3 c\u00f3 tr\u00ean macOS, c\u00f9ng v\u1edbi danh s\u00e1ch ph\u00f2ng c\u00f4ng khai, ch\u1ebf \u0111\u1ed9 ph\u00e1t, di\u1ec7n m\u1ea1o m\u1edbi m\u1ebb v\u00e0 c\u00e1c b\u1ea3n c\u1eadp nh\u1eadt nhanh h\u01a1n t\u1eeb nay v\u1ec1 sau.\",null,\"Kini di macOS, plus daftar lobi publik, mode broadcast, tampilan baru yang segar, dan pembaruan yang lebih cepat mulai sekarang.\",\"Kini di macOS, ditambah senarai lobi awam, mod siaran, wajah baharu yang segar, dan kemas kini yang lebih pantas selepas ini.\"],\"localized_title_image\":[\"189e23d4c781d71f17566491066a02454ef365d7.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_capsule_image\":[\"3feca49ef9aa35b02839ebf33e4b5a34c2b67911.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"bSaleEnabled\":false,\"sale_show_creator\":false,\"sale_sections\":[],\"sale_browsemore_text\":\"\",\"sale_browsemore_url\":\"\",\"sale_browsemore_color\":\"\",\"sale_browsemore_bgcolor\":\"\",\"localized_sale_header\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_overlay\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_mobile_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_logo\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"sale_font\":\"\",\"sale_background_color\":\"\",\"sale_header_offset\":530,\"referenced_appids\":[],\"bBroadcastEnabled\":false,\"broadcastChatSetting\":\"hide\",\"default_broadcast_title\":\"#Broadcast_default_title_dev\",\"localized_broadcast_title\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_left_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_right_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"broadcast_whitelist\":[],\"bScheduleEnabled\":false,\"scheduleEntries\":[],\"library_spotlight\":true}","announcement_body":{"gid":"680760490643685721","clanid":"46217884","posterid":"0","headline":"Porthole 2.0.0: macOS, a lobby browser, and more","posttime":1788396913,"updatetime":1788396913,"body":"[p]This is a big one. 2.0.0 is the largest update we've shipped so far, and we're pretty happy with it. Here's what changed.\n[\/p][h2]Porthole is on macOS![\/h2][p]Apple Silicon Macs are invited to the party. The same one-click hosting and joining you know from Windows and Linux, now on your Mac too.[\/p][p] [img src=\"{STEAM_CLAN_IMAGE}\/46217884\/db1b19190f53ddc067d993f83b5d010be5418f45.png\"][\/img][\/p][h2]A whole lobby browser[\/h2][p]No more \"what's your code?\" back and forth. Browse the open lobbies, sort and filter them, and click one to connect. Your friends' lobbies stay pinned at the top. Want people to find yours? List it with a name and a description, and put a password on it if you like. [\/p][p][img src=\"{STEAM_CLAN_IMAGE}\/46217884\/8aad7e4e964405b08d2b661c8ee973c235065957.png\"][\/img][\/p][h2]Show up on the LAN[\/h2][p]Broadcast mode makes a game you're hosting look like it's sitting on your own local network, so anything that goes looking for LAN servers has a shot at spotting it. In theory that helps with a whole lot of games. On by default when your network setup allows it. Today it covers UDP broadcast games, with a full L2 adapter on the way to widen that. For games that only advertise over LAN broadcast and give you no way to connect by IP, it's the only way in at all. It's also a big help for Source-engine games, which ignore the loopback interface by default, so broadcast is what lets them find your server (otherwise everyone has to type net_usesocketsforloopback 1 in the console).[\/p][p][img src=\"{STEAM_CLAN_IMAGE}\/46217884\/15073a749df65a05c5336737b837d4793b089a6e.png\"][\/img][\/p][h2]A fresh coat of paint[\/h2][p]Porthole got a proper cleanup: consistent buttons and icons, panels you can drag to resize, tooltips on the bits you used to squint at, and a Help screen that finally earns the name. It also sizes itself to your display, so it looks right on a cramped laptop or a big monitor without you ever touching a scale slider.\n[\/p][h2]Plenty more that's new[\/h2][list][*][p]Temporary share codes: let people into a password-protected lobby without ever handing over the real password.[\/p][\/*][*][p]Porthole remembers your last lobby (name, password, visibility, player cap, description), so you're hosting again in seconds.[\/p][\/*][*][p]Offer a port to friends under a different number than the game actually listens on.[\/p][\/*][*][p]An upload limit for the whole tunnel, a notification center, favourite friends, and a Firewall helper on Linux.\n[\/p][\/*][\/list][h2]And it's tougher now[\/h2][list][*][p]Dropped connections pick themselves back up, with a proper retry dialog when an outage drags on.[\/p][\/*][*][p]Switched WiFi mid-session? The host rebuilds its lobby on its own, and your share code keeps working right through it.[\/p][\/*][*][p]A brief blip no longer scrambles who's in charge or boots you from your own game.[\/p][\/*][*][p]\"Kick older versions\" stopped kicking people who are on the same version as you.[\/p][\/*][*][p]Squashed a \"Steam client appears to be out of date\" that was locking some players out on a perfectly fine Steam.\n[\/p][\/*][\/list][h2]Faster updates from here[\/h2][p]We've opened a Steam beta branch and added an Experimental features toggle in Settings, so new stuff can reach you sooner and get polished out in the open. Want the bleeding edge? Opt into the beta (right-click Porthole in your library, then Properties, then Betas), you may also turn on Experimental features under Advanced Porthole settings. \n[\/p][h2]What's next[\/h2][p]We're not done. Next up is third-party addon support, starting with optional virtual network adapters (L2\/L3) that put you and your friends on one virtual LAN, for the games that only ever wanted a real local network. After that, the feature many of you asked for - persistent lobbies.\n[\/p][h2]Like what we're doing?[\/h2][p]Porthole is built by a tiny team, and the [url=\"https:\/\/store.steampowered.com\/app\/4995560\/\"]Supporter Pack[\/url] is the easiest way to help us keep the updates coming. It's cosmetic only, so you're backing the work, not buying features.\n\n[dynamiclink href=\"https:\/\/store.steampowered.com\/app\/4995560\/\"][\/dynamiclink]Want to do more? Come hang out in our [url=\"https:\/\/discord.gg\/vTN6r5RBwH\"]Discord[\/url] and help us test the beta branch. We've got something planned for the people who really pitch in. And if you already got the Supporter Pack, gifting it to a friend, or just telling people about Porthole, helps more than you'd think. Thank you so much![\/p]","commentcount":20,"tags":["mod_reviewed","ModAct_1426387032_1788398897_0"],"language":0,"hidden":0,"forum_topic_id":"587310798376922644","event_gid":"680760490643685720","voteupcount":349,"votedowncount":16,"ban_check_result":0,"banned":0},"published":1,"hidden":0,"rtime32_visibility_start":0,"rtime32_visibility_end":0,"broadcaster_accountid":0,"follower_count":0,"ignore_count":0,"forum_topic_id":"587310798376922644","rtime32_last_modified":1790979461,"news_post_gid":"0","rtime_mod_reviewed":1788398897,"featured_app_tagid":0,"referenced_appids":[],"build_id":25073590,"build_branch":"","unlisted":0,"rtime_created":1788385900,"votes_up":349,"votes_down":16,"comment_type":"ForumTopic","gidfeature":"588432892837890858","gidfeature2":"587310798376922644"},{"gid":"689765153413006801","clan_steamid":"103582791475739292","event_name":"The Supporter Pack is out","event_type":15,"appid":4963920,"server_address":null,"server_password":null,"rtime32_start_time":1786433400,"rtime32_end_time":1786438801,"comment_count":0,"creator_steamid":"0","last_update_steamid":"0","event_notes":"see announcement body","jsondata":"{\"localized_subtitle\":[\"You asked how to support Porthole. Now you can.\",\"Ihr habt gefragt, wie ihr Porthole unterst\u00fctzen k\u00f6nnt. Ab jetzt geht das.\",\"Vous nous demandiez comment soutenir Porthole. Maintenant, c'est possible.\",\"Ci avete chiesto come sostenere Porthole. Ora si pu\u00f2.\",\"Porthole\uc744 \uc5b4\ub5bb\uac8c \uc751\uc6d0\ud558\ub0d0\uace0 \ubb3c\uc5b4\ubcf4\uc168\uc8e0. \uc774\uc81c \ud558\uc2e4 \uc218 \uc788\uc5b4\uc694.\",\"Nos preguntabais c\u00f3mo apoyar Porthole. Ahora ya pod\u00e9is.\",\"\u4f60\u4eec\u95ee\u8fc7\u600e\u4e48\u652f\u6301 Porthole\uff0c\u73b0\u5728\u53ef\u4ee5\u4e86\u3002\",\"\u4f60\u5011\u4e00\u76f4\u554f\u8981\u600e\u9ebc\u652f\u6301 Porthole\uff0c\u73fe\u5728\u6709\u8fa6\u6cd5\u4e86\u3002\",\"\u0412\u044b \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u043b\u0438, \u043a\u0430\u043a \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044c Porthole. \u0422\u0435\u043f\u0435\u0440\u044c \u043c\u043e\u0436\u043d\u043e.\",\"\u0e2b\u0e25\u0e32\u0e22\u0e04\u0e19\u0e16\u0e32\u0e21\u0e27\u0e48\u0e32\u0e08\u0e30\u0e2a\u0e19\u0e31\u0e1a\u0e2a\u0e19\u0e38\u0e19 Porthole \u0e22\u0e31\u0e07\u0e44\u0e07\u0e14\u0e35 \u0e15\u0e2d\u0e19\u0e19\u0e35\u0e49\u0e17\u0e33\u0e44\u0e14\u0e49\u0e41\u0e25\u0e49\u0e27\",\"Porthole \u3092\u5fdc\u63f4\u3059\u308b\u65b9\u6cd5\u306f\u3042\u308a\u307e\u3059\u304b\u3002\u305d\u3093\u306a\u58f0\u306b\u3001\u3088\u3046\u3084\u304f\u304a\u5fdc\u3048\u3067\u304d\u307e\u3059\u3002\",\"Perguntavam como apoiar o Porthole. Agora j\u00e1 d\u00e1.\",\"Pytali\u015bcie, jak wesprze\u0107 Porthole. Teraz ju\u017c mo\u017cecie.\",\"I spurgte, hvordan I kunne st\u00f8tte Porthole. Nu kan I.\",\"Jullie vroegen hoe je Porthole kon steunen. Vanaf nu kan dat.\",\"Kysyitte, miten Portholea voi tukea. Nyt se onnistuu.\",\"Dere har spurt hvordan dere kan st\u00f8tte Porthole. N\u00e5 kan dere det.\",\"Ni har fr\u00e5gat hur man kan st\u00f6tta Porthole. Nu g\u00e5r det.\",\"K\u00e9rdezt\u00e9tek, hogyan t\u00e1mogathatn\u00e1tok a Porthole-t. Most m\u00e1r lehet.\",\"Ptali jste se, jak Porthole podpo\u0159it. Te\u010f to jde.\",\"Ne-a\u021bi \u00eentrebat cum pute\u021bi sus\u021bine Porthole. Acum se poate.\",\"Porthole'a nas\u0131l destek olabilece\u011finizi sordunuz. Art\u0131k m\u00fcmk\u00fcn.\",\"Voc\u00eas pediam um jeito de apoiar o Porthole. Agora tem.\",\"\u041f\u0438\u0442\u0430\u0445\u0442\u0435 \u043a\u0430\u043a \u0434\u0430 \u043f\u043e\u0434\u043a\u0440\u0435\u043f\u0438\u0442\u0435 Porthole. \u0412\u0435\u0447\u0435 \u043c\u043e\u0436\u0435\u0442\u0435.\",\"\u03a1\u03c9\u03c4\u03bf\u03cd\u03c3\u03b1\u03c4\u03b5 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c3\u03c4\u03b7\u03c1\u03af\u03be\u03b5\u03c4\u03b5 \u03c4\u03bf Porthole. \u03a4\u03ce\u03c1\u03b1 \u03bc\u03c0\u03bf\u03c1\u03b5\u03af\u03c4\u03b5.\",\"\u0633\u0623\u0644\u062a\u0648\u0646\u0627 \u0643\u064a\u0641 \u062a\u062f\u0639\u0645\u0648\u0646 Porthole. \u0648\u0627\u0644\u0622\u0646 \u062a\u0642\u062f\u0631\u0648\u0646.\",\"\u0412\u0438 \u043f\u0438\u0442\u0430\u043b\u0438, \u044f\u043a \u043f\u0456\u0434\u0442\u0440\u0438\u043c\u0430\u0442\u0438 Porthole. \u0422\u0435\u043f\u0435\u0440 \u043c\u043e\u0436\u043d\u0430.\",\"Nos preguntaban c\u00f3mo apoyar a Porthole. Ahora ya se puede.\",\"C\u00e1c b\u1ea1n \u0111\u00e3 h\u1ecfi l\u00e0m sao \u0111\u1ec3 \u1ee7ng h\u1ed9 Porthole. Gi\u1edd th\u00ec c\u00f3 c\u00e1ch r\u1ed3i.\",null,\"Kalian sering bertanya bagaimana cara mendukung Porthole. Sekarang kalian bisa.\",\"Ramai tanya macam mana nak sokong Porthole. Sekarang boleh dah.\"],\"localized_summary\":[\"People kept asking how to support Porthole. Now there is a way. The Supporter Pack is optional and locks no features away. What it adds is cosmetic, and Porthole stays free.\",\"Viele haben gefragt, wie man Porthole unterst\u00fctzen kann. Jetzt geht das: Das Supporter Pack ist freiwillig und sperrt nichts weg. Rein kosmetisch, Porthole bleibt kostenlos.\",\"Beaucoup voulaient soutenir Porthole. C'est enfin possible. Le Supporter Pack est optionnel et ne verrouille rien. Ses bonus sont cosm\u00e9tiques, et Porthole reste gratuit.\",\"In tanti chiedevano come sostenere Porthole. Ora c'\u00e8 un modo. Il Supporter Pack \u00e8 facoltativo e non blocca nulla. Aggiunge solo dettagli estetici, e Porthole resta gratis.\",\"Porthole\uc744 \uc751\uc6d0\ud560 \ubc29\ubc95\uc744 \ubb3b\ub294 \ubd84\ub4e4\uc774 \ub9ce\uc558\uc5b4\uc694. \uc774\uc81c \uadf8 \ubc29\ubc95\uc774 \uc0dd\uacbc\uc2b5\ub2c8\ub2e4. Supporter Pack\uc740 \uc120\ud0dd \uc0ac\ud56d\uc774\uace0, \uc7a0\uae30\ub294 \uae30\ub2a5\uc740 \ud558\ub098\ub3c4 \uc5c6\uc5b4\uc694. \ucd94\uac00\ub418\ub294 \uac74 \uafb8\ubbf8\uae30 \uc694\uc18c\ubfd0, Porthole\uc740 \uacc4\uc18d \ubb34\ub8cc\uc785\ub2c8\ub2e4.\",\"No parabais de preguntar c\u00f3mo apoyar Porthole. Ya hay forma. El Supporter Pack es opcional y no bloquea nada. Lo que a\u00f1ade es est\u00e9tico, y Porthole sigue gratis.\",\"\u603b\u6709\u4eba\u95ee\u600e\u4e48\u652f\u6301 Porthole\uff0c\u73b0\u5728\u603b\u7b97\u6709\u529e\u6cd5\u4e86\u3002Supporter Pack \u4e70\u4e0d\u4e70\u90fd\u884c\uff0c\u4e0d\u9501\u4efb\u4f55\u529f\u80fd\u3002\u52a0\u7684\u53ea\u662f\u5916\u89c2\uff0cPorthole \u7167\u6837\u514d\u8d39\u3002\",\"\u4e00\u76f4\u6709\u4eba\u554f\u8981\u600e\u9ebc\u652f\u6301 Porthole\uff0c\u73fe\u5728\u7d42\u65bc\u6709\u4e86\u8fa6\u6cd5\u3002Supporter Pack \u8cb7\u4e0d\u8cb7\u90fd\u96a8\u4f60\uff0c\u4e0d\u6703\u628a\u4efb\u4f55\u529f\u80fd\u9396\u8d77\u4f86\uff0c\u52a0\u9032\u4f86\u7684\u90fd\u662f\u5916\u89c0\u800c\u5df2\uff0cPorthole \u4f9d\u7136\u514d\u8cbb\u3002\",\"\u0418\u0433\u0440\u043e\u043a\u0438 \u0447\u0430\u0441\u0442\u043e \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u043b\u0438, \u043a\u0430\u043a \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044c Porthole. \u0422\u0435\u043f\u0435\u0440\u044c \u0435\u0441\u0442\u044c \u0441\u043f\u043e\u0441\u043e\u0431. Supporter Pack \u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u0435\u043d \u0438 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0431\u043b\u043e\u043a\u0438\u0440\u0443\u0435\u0442. \u041e\u043d \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u0435\u0442 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u043a\u0443, \u0430 Porthole \u043e\u0441\u0442\u0430\u0451\u0442\u0441\u044f \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u043c.\",\"\u0e2b\u0e25\u0e32\u0e22\u0e04\u0e19\u0e16\u0e32\u0e21\u0e01\u0e31\u0e19\u0e21\u0e32\u0e15\u0e25\u0e2d\u0e14\u0e27\u0e48\u0e32\u0e08\u0e30\u0e2a\u0e19\u0e31\u0e1a\u0e2a\u0e19\u0e38\u0e19 Porthole \u0e22\u0e31\u0e07\u0e44\u0e07 \u0e15\u0e2d\u0e19\u0e19\u0e35\u0e49\u0e21\u0e35\u0e17\u0e32\u0e07\u0e41\u0e25\u0e49\u0e27 Supporter Pack \u0e40\u0e1b\u0e47\u0e19\u0e02\u0e2d\u0e07\u0e40\u0e2a\u0e23\u0e34\u0e21 \u0e44\u0e21\u0e48\u0e25\u0e47\u0e2d\u0e01\u0e1f\u0e35\u0e40\u0e08\u0e2d\u0e23\u0e4c\u0e44\u0e2b\u0e19\u0e44\u0e27\u0e49 \u0e17\u0e35\u0e48\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e21\u0e32\u0e40\u0e1b\u0e47\u0e19\u0e41\u0e04\u0e48\u0e02\u0e2d\u0e07\u0e41\u0e15\u0e48\u0e07 Porthole \u0e22\u0e31\u0e07\u0e1f\u0e23\u0e35\u0e40\u0e2b\u0e21\u0e37\u0e2d\u0e19\u0e40\u0e14\u0e34\u0e21\",\"Porthole \u3092\u5fdc\u63f4\u3057\u305f\u3044\u3068\u3044\u3046\u58f0\u306b\u304a\u5fdc\u3048\u3057\u3066\u3001Supporter Pack \u304c\u3067\u304d\u307e\u3057\u305f\u3002\u8cfc\u5165\u306f\u4efb\u610f\u3067\u3001\u6a5f\u80fd\u304c\u5236\u9650\u3055\u308c\u308b\u3053\u3068\u306f\u4e00\u5207\u3042\u308a\u307e\u305b\u3093\u3002\u5897\u3048\u308b\u306e\u306f\u898b\u305f\u76ee\u3060\u3051\u3002Porthole \u306f\u305a\u3063\u3068\u7121\u6599\u306e\u307e\u307e\u3067\u3059\u3002\",\"Andavam sempre a perguntar como apoiar o Porthole. Agora h\u00e1 forma. O Supporter Pack \u00e9 opcional e n\u00e3o bloqueia nada. O que traz \u00e9 cosm\u00e9tico, e o Porthole continua gr\u00e1tis.\",\"Wci\u0105\u017c pytali\u015bcie, jak wesprze\u0107 Porthole. Teraz jest na to spos\u00f3b. Supporter Pack jest opcjonalny i niczego nie blokuje. To czysta kosmetyka, a Porthole zostaje darmowy.\",\"Mange har spurgt, hvordan man kan st\u00f8tte Porthole. Nu er der en m\u00e5de. Supporter Pack er frivillig og l\u00e5ser ingen funktioner v\u00e6k. Det er ren pynt, og Porthole er stadig gratis.\",\"Veel mensen vroegen hoe ze Porthole konden steunen. Nu kan het. De Supporter Pack is optioneel en houdt niets achter. Wat je krijgt is cosmetisch, en Porthole blijft gratis.\",\"Moni on kysynyt, miten Portholea voisi tukea. Nyt on keino. Supporter Pack on vapaaehtoinen eik\u00e4 lukitse ominaisuuksia. Se tuo vain koristeita, ja Porthole pysyy ilmaisena.\",\"Mange har lurt p\u00e5 hvordan de kan st\u00f8tte Porthole. N\u00e5 finnes det en m\u00e5te. Supporter Pack er frivillig og l\u00e5ser ingenting. Det er bare pynt, og Porthole er fortsatt gratis.\",\"M\u00e5nga fr\u00e5gade hur man kan st\u00f6tta Porthole. Nu finns ett s\u00e4tt. Supporter Pack \u00e4r frivilligt och l\u00e5ser inga funktioner. Det som ing\u00e5r \u00e4r kosmetiskt, Porthole f\u00f6rblir gratis.\",\"Sokan k\u00e9rdezt\u00e9k, hogyan t\u00e1mogathatn\u00e1k a Porthole-t. Most van r\u00e1 m\u00f3d. A Supporter Pack nem k\u00f6telez\u0151, \u00e9s semmit sem z\u00e1r el. Csak k\u00fcls\u0151s\u00e9gek j\u00e1rnak vele, a Porthole ingyenes marad.\",\"Po\u0159\u00e1d jste se ptali, jak Porthole podpo\u0159it. Te\u010f je tu zp\u016fsob. Supporter Pack je dobrovoln\u00fd a nic za n\u011bj nezamyk\u00e1me. P\u0159id\u00e1v\u00e1 jen kosmetiku a Porthole z\u016fst\u00e1v\u00e1 zdarma.\",\"Tot ne-a\u021bi \u00eentrebat cum pute\u021bi sus\u021bine Porthole. Acum ave\u021bi cum. Supporter Pack e op\u021bional \u0219i nu blocheaz\u0103 nimic. Adaug\u0103 doar lucruri cosmetice, iar Porthole r\u0103m\u00e2ne gratuit.\",\"Porthole'a nas\u0131l destek olunur diye sorup durdunuz. Art\u0131k bir yolu var. Supporter Pack iste\u011fe ba\u011fl\u0131, hi\u00e7bir \u00f6zelli\u011fi kilitlemiyor. Katt\u0131\u011f\u0131 \u015fey g\u00f6rsel, Porthole \u00fccretsiz kal\u0131yor.\",\"Muita gente perguntava como apoiar o Porthole. Agora tem um jeito. O Supporter Pack \u00e9 opcional, n\u00e3o tranca nada. O que ele traz \u00e9 s\u00f3 visual, e o Porthole segue de gra\u00e7a.\",\"\u0425\u043e\u0440\u0430\u0442\u0430 \u043f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u043e \u043f\u0438\u0442\u0430\u0445\u0430 \u043a\u0430\u043a \u0434\u0430 \u043f\u043e\u0434\u043a\u0440\u0435\u043f\u044f\u0442 Porthole. \u0412\u0435\u0447\u0435 \u0438\u043c\u0430 \u043d\u0430\u0447\u0438\u043d. Supporter Pack \u0435 \u043f\u043e \u0438\u0437\u0431\u043e\u0440 \u0438 \u043d\u0435 \u0437\u0430\u043a\u043b\u044e\u0447\u0432\u0430 \u043d\u0438\u0449\u043e. \u0414\u043e\u0431\u0430\u0432\u044f \u0441\u0430\u043c\u043e \u043a\u043e\u0437\u043c\u0435\u0442\u0438\u043a\u0430, \u0430 Porthole \u0441\u0438 \u043e\u0441\u0442\u0430\u0432\u0430 \u0431\u0435\u0437\u043f\u043b\u0430\u0442\u0435\u043d.\",\"\u03a0\u03bf\u03bb\u03bb\u03bf\u03af \u03c1\u03c9\u03c4\u03bf\u03cd\u03c3\u03b1\u03bd \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c3\u03c4\u03b7\u03c1\u03af\u03be\u03bf\u03c5\u03bd \u03c4\u03bf Porthole. \u03a4\u03ce\u03c1\u03b1 \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9. \u03a4\u03bf Supporter Pack \u03b5\u03af\u03bd\u03b1\u03b9 \u03c0\u03c1\u03bf\u03b1\u03b9\u03c1\u03b5\u03c4\u03b9\u03ba\u03cc, \u03b4\u03b5\u03bd \u03ba\u03bb\u03b5\u03b9\u03b4\u03ce\u03bd\u03b5\u03b9 \u03c4\u03af\u03c0\u03bf\u03c4\u03b1. \u03a0\u03c1\u03bf\u03c3\u03b8\u03ad\u03c4\u03b5\u03b9 \u03bc\u03cc\u03bd\u03bf \u03b4\u03b9\u03b1\u03ba\u03bf\u03c3\u03bc\u03b7\u03c4\u03b9\u03ba\u03ac, \u03ba\u03b1\u03b9 \u03c4\u03bf Porthole \u03bc\u03ad\u03bd\u03b5\u03b9 \u03b4\u03c9\u03c1\u03b5\u03ac\u03bd.\",\"\u0638\u0644 \u0627\u0644\u0646\u0627\u0633 \u064a\u0633\u0623\u0644\u0648\u0646 \u0643\u064a\u0641 \u064a\u062f\u0639\u0645\u0648\u0646 Porthole\u060c \u0648\u0627\u0644\u0622\u0646 \u0635\u0627\u0631\u062a \u0647\u0646\u0627\u0643 \u0637\u0631\u064a\u0642\u0629. Supporter Pack \u0627\u062e\u062a\u064a\u0627\u0631\u064a\u0629 \u0648\u0644\u0627 \u062a\u0642\u0641\u0644 \u0623\u064a \u0645\u064a\u0632\u0629\u060c \u0648\u0645\u0627 \u062a\u0636\u064a\u0641\u0647 \u0634\u0643\u0644\u064a \u0641\u0642\u0637\u060c \u0648Porthole \u064a\u0628\u0642\u0649 \u0645\u062c\u0627\u0646\u064a.\",\"\u0412\u0438 \u0447\u0430\u0441\u0442\u043e \u043f\u0438\u0442\u0430\u043b\u0438, \u044f\u043a \u043f\u0456\u0434\u0442\u0440\u0438\u043c\u0430\u0442\u0438 Porthole. \u0422\u0435\u043f\u0435\u0440 \u0454 \u0441\u043f\u043e\u0441\u0456\u0431: Supporter Pack. \u0412\u0456\u043d \u043d\u0435\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0439, \u043d\u0456\u0447\u043e\u0433\u043e \u043d\u0435 \u0431\u043b\u043e\u043a\u0443\u0454, \u0434\u043e\u0434\u0430\u0454 \u043b\u0438\u0448\u0435 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u043a\u0443. Porthole \u043b\u0438\u0448\u0430\u0454\u0442\u044c\u0441\u044f \u0431\u0435\u0437\u043a\u043e\u0448\u0442\u043e\u0432\u043d\u0438\u043c.\",\"Muchos nos ped\u00edan una forma de apoyar a Porthole. Ya la hay. El Supporter Pack es opcional, no bloquea nada, solo suma detalles visuales y Porthole sigue gratis.\",\"Nhi\u1ec1u b\u1ea1n c\u1ee9 h\u1ecfi c\u00e1ch \u1ee7ng h\u1ed9 Porthole. Gi\u1edd \u0111\u00e3 c\u00f3 Supporter Pack, t\u00f9y ch\u1ecdn th\u00f4i, kh\u00f4ng kh\u00f3a t\u00ednh n\u0103ng n\u00e0o. N\u00f3 ch\u1ec9 th\u00eam ph\u1ea7n trang tr\u00ed, Porthole v\u1eabn mi\u1ec5n ph\u00ed.\",null,\"Banyak yang bertanya cara mendukung Porthole. Sekarang ada jalannya. Supporter Pack opsional dan tak mengunci fitur apa pun. Isinya cuma kosmetik, Porthole tetap gratis.\",\"Ramai asyik tanya macam mana nak sokong Porthole. Sekarang dah ada caranya. Supporter Pack tak wajib, tiada ciri dikunci. Ia cuma hiasan, Porthole kekal percuma.\"],\"localized_title_image\":[\"189e23d4c781d71f17566491066a02454ef365d7.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_capsule_image\":[\"b7d1ca38da56857ad859a5be74b4286dd2b2a460.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"bSaleEnabled\":false,\"sale_show_creator\":false,\"sale_sections\":[],\"sale_browsemore_text\":\"\",\"sale_browsemore_url\":\"\",\"sale_browsemore_color\":\"\",\"sale_browsemore_bgcolor\":\"\",\"localized_sale_header\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_overlay\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_mobile_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_logo\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"sale_font\":\"\",\"sale_background_color\":\"\",\"sale_header_offset\":530,\"referenced_appids\":[],\"bBroadcastEnabled\":false,\"broadcastChatSetting\":\"hide\",\"default_broadcast_title\":\"#Broadcast_default_title_dev\",\"localized_broadcast_title\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_left_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_right_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"broadcast_whitelist\":[],\"bScheduleEnabled\":false,\"scheduleEntries\":[],\"library_spotlight\":true}","announcement_body":{"gid":"689765153413006802","clanid":"46217884","posterid":"0","headline":"The Supporter Pack is out","posttime":1786433436,"updatetime":1786457603,"body":"[p]Hey everyone,\n[\/p][p]For a while, people have written in asking the same thing. Porthole is free, so is there a way to give something back? Until now the answer was no. The [url=\"https:\/\/store.steampowered.com\/app\/4995560\/Porthole__Supporter_Pack\/\"]Supporter Pack[\/url] changes that.[\/p][p]Here is the honest version. The pack locks no features away. Porthole is free today and stays free, every feature, for everyone. What it adds is cosmetic, so your friends can see you support the project.\n[\/p][h2]What you get[\/h2][p]Turn each one on or off in Settings. Everyone in your lobby can see it.[\/p][list][*][p]A [b]supporter badge[\/b] next to your name.[\/p][\/*][*][p]A [b]golden frame[\/b] around your avatar.[\/p][\/*][*][p]Your [b]name in gold[\/b].[\/p][\/*][*][p]A [b]\"supporter since\"[\/b] date. Buy on day one and you wear the earliest date there is.[\/p][\/*][\/list][p]\n[dynamiclink href=\"https:\/\/store.steampowered.com\/app\/4995560\/Porthole__Supporter_Pack\/\"][\/dynamiclink]Porthole runs its traffic over Steam's relay network, which Valve provides free of charge. Steam takes its usual commission on the pack, and we are glad it does. Some of what you spend goes back toward the relays that carry your connection when a direct link cannot, so players behind strict networks can still join.\n[\/p][h2]Thank you[\/h2][p]Buy it or not, thank you for using Porthole and bringing your friends along. That is what keeps it going.[\/p][p]- The SeStudio Team[\/p]","commentcount":17,"tags":["mod_reviewed","ModAct_1415716708_1786433576_0","ModAct_1889321037_1786461642_4"],"language":0,"hidden":0,"forum_topic_id":"581679312044845405","event_gid":"689765153413006801","voteupcount":349,"votedowncount":6,"ban_check_result":0,"banned":0},"published":1,"hidden":0,"rtime32_visibility_start":0,"rtime32_visibility_end":0,"broadcaster_accountid":0,"follower_count":0,"ignore_count":0,"forum_topic_id":"581679312044845405","rtime32_last_modified":1790961257,"news_post_gid":"0","rtime_mod_reviewed":1786461642,"featured_app_tagid":0,"referenced_appids":[],"build_id":0,"build_branch":"","unlisted":0,"rtime_created":1786433380,"votes_up":349,"votes_down":6,"comment_type":"ForumTopic","gidfeature":"588432892837890858","gidfeature2":"581679312044845405"}],"EventWebRowEmbed":{"bPreLoaded":true,"announcementGIDList":["680760490643685721","689765153413006802"],"last_update_event":{"rtime":1788396900,"event_gid":"680760490643685720","announcement_gid":"680760490643685721","clan_account_id":46217884}}};
+						</script>
+					
+
+					<div data-featuretarget="events-row"></div>
+				
+								
+				
+				
+
+
+								<div id="contentForThisGame_ctn">
+				</div>
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="aboutThisGame" class="game_page_autocollapse" style="max-height: 850px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>About This Software</h2>
+							<p class="bb_paragraph" ><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/extras/104e40e4338eaffcfcb1e1581a588970.avif?t=1788422775" data-big-src=https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/extras_big/104e40e4338eaffcfcb1e1581a588970.avif?t=1788422775 width=1560 height=428 /></span>You found a great co-op game, and it only does local multiplayer. Same network, no online option, so the friend across the country is out of luck. Porthole makes that friend show up as if they were on your local network, so you can play together over the internet.</p><h2 class="bb_tag" >What is Porthole?</h2><p class="bb_paragraph" >Porthole is a lightweight desktop proxy that lets you share a local TCP or UDP port with your Steam friends over Steam's own network. They connect to your server (or any local service) as if it were running on their own machine - with no port forwarding, no public IP, and no router setup. It is a free Hamachi and Radmin alternative built for gamers: instead of putting your whole machine on a virtual LAN, it proxies only the ports you pick, so you get port forwarding without a router.</p><p class="bb_paragraph" >It's a networking utility, not a full VPN: Porthole shares the specific ports you choose, not your whole network.</p><p class="bb_paragraph" ><span class="bb_img_ctn"><video class="bb_img" autoplay muted loop playsinline crossorigin="anonymous" poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/extras/b0b036b3e675823e0fea7e6036995228.poster.avif?t=1788422775" width=1120 height=630 ><source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963920/extras/b0b036b3e675823e0fea7e6036995228.webm?t=1788422775" type="video/webm; codecs=vp9"></video></span></p><h2 class="bb_tag" >Use it to</h2><ul class="bb_ul"><li><p class="bb_paragraph" >Let friends into a server you host, like a Minecraft world or a dedicated game server, without touching your router.</p></li><li><p class="bb_paragraph" >Play LAN-only and local-multiplayer games over the internet, as if everyone were on the same LAN.</p></li><li><p class="bb_paragraph" >Share any other local TCP or UDP service with people you trust.</p></li></ul><h2 class="bb_tag" >How it works</h2><p class="bb_paragraph" >1. Pick the local ports to share (or auto-detect them from a running game) and create a lobby.</p><p class="bb_paragraph" >2. Friends join with a short share code or from your Steam friends list.</p><p class="bb_paragraph" >3. You offer each port; they approve it and it binds on their own machine.</p><p class="bb_paragraph" >4. Traffic tunnels over Steam's network, either directly peer-to-peer or through Valve's relay.</p><h2 class="bb_tag" >Key features</h2><ul class="bb_ul"><li><p class="bb_paragraph" >Works with both TCP and UDP servers.</p></li><li><p class="bb_paragraph" >Built-in port detection - find the ports a running game or app is using, no lookup needed.</p></li><li><p class="bb_paragraph" >No port forwarding and no public IP - works behind NAT and CGNAT.</p></li><li><p class="bb_paragraph" >Join by share code or from the Steam friends list.</p></li><li><p class="bb_paragraph" >Optional password-protected lobbies.</p></li><li><p class="bb_paragraph" >Per-port approval, local remapping, and host kick/ban controls.</p></li><li><p class="bb_paragraph" >Automatic peer-to-peer or Valve relay routing.</p></li><li><p class="bb_paragraph" >Adaptive rate control tuned for the Steam relay.</p></li><li><p class="bb_paragraph" >Clean native GUI that runs from the system tray, plus a scriptable command-line interface.</p></li><li><p class="bb_paragraph" >Windows and Linux/SteamOS support.</p></li></ul><h2 class="bb_tag" >FAQ</h2><p class="bb_paragraph" ><strong>Is this a VPN?</strong></p><p class="bb_paragraph" >No. A VPN joins whole machines into one network. Porthole tunnels only the individual ports you choose to share, and guests approve each port before it binds on their machine.</p><p class="bb_paragraph" ><strong>Do my friends need Porthole too?</strong></p><p class="bb_paragraph" >Yes, and it's free. Joining takes one share code, with nothing to set up.</p><p class="bb_paragraph" ><strong>Can the people I share with see my network or files?</strong></p><p class="bb_paragraph" >No. A guest can reach only the ports you offered and they accepted, nothing else. You can kick or ban anyone at any time.</p><p class="bb_paragraph" ><strong>How do my friends connect once they join?</strong></p><p class="bb_paragraph" >The shared port opens on their own machine, so they point the game at their local address, for example a Direct Connect to 127.0.0.1 on the port they approved.</p><p class="bb_paragraph" ><strong>What about latency?</strong></p><p class="bb_paragraph" >Porthole runs over Steam's networking, routing each connection over a direct peer-to-peer link or Valve's relay network, the same infrastructure Valve's own multiplayer games use. Both add minimal overhead, and the relay is often as fast or faster, since it runs over Valve's backbone rather than the open internet's default path.</p><p class="bb_paragraph" ><strong>Is it really free?</strong></p><p class="bb_paragraph" >Yes, it's completely free.</p><p class="bb_paragraph" >Pick a port, share a code, and play.</p>						</div>
+					</div>
+					<div class="game_page_autocollapse">
+		<div id="game_area_content_descriptors" class="game_area_description">
+			<h2>AI Generated Content Disclosure</h2>
+			<p>The developers describe how their game uses AI Generated Content like this:</p>
+			<p><i>
+					Generative AI tools were used during development, including for localization of in-game text.				</i>
+			</p>
+		</div>
+	</div>
+	
+				
+				
+					<div class="game_page_autocollapse sys_req" style="max-height: 300px;">
+		<h2>System Requirements</h2>
+					<div class="sysreq_tabs">
+									<div class="sysreq_tab active" data-os="win">
+						Windows					</div>
+									<div class="sysreq_tab " data-os="mac">
+						macOS					</div>
+									<div class="sysreq_tab " data-os="linux">
+						SteamOS + Linux					</div>
+								<div style="clear: left;"></div>
+			</div>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bit or Windows 11<br></li><li><strong>Processor:</strong> Any modern dual-core 64-bit processor<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 11-class integrated graphics or newer (Vulkan / OpenGL also supported; a CPU software renderer is built in, so a dedicated GPU is not required)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 512 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bit or Windows 11<br></li><li><strong>Processor:</strong> Any modern dual-core 64-bit processor<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 11-class integrated graphics or newer (Vulkan / OpenGL also supported; a CPU software renderer is built in, so a dedicated GPU is not required)<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 512 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+
+									</div>
+							<div class="game_area_sys_req sysreq_content " data-os="mac">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li>Requires an Apple processor<br></li><li><strong>OS:</strong> macOS 11 Big Sur or later<br></li><li><strong>Processor:</strong> Apple Silicon (M1 or later)<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> Metal-capable GPU (any Apple Silicon integrated graphics)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 100 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in. The app is not notarized!</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li>Requires an Apple processor<br></li><li><strong>OS:</strong> macOS 11 Big Sur or later<br></li><li><strong>Processor:</strong> Apple Silicon (M1 or later)<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Metal-capable GPU (any Apple Silicon integrated graphics)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 100 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in. The app is not notarized!</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+
+									</div>
+							<div class="game_area_sys_req sysreq_content " data-os="linux">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu 20.04 LTS or newer (glibc 2.31+), 64-bit (SteamOS supported)<br></li><li><strong>Processor:</strong> Any modern dual-core 64-bit processor<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> Vulkan- or OpenGL-capable integrated graphics with current Mesa/vendor drivers (CPU software fallback included; no dedicated GPU required)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 100 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu 22.04 LTS or newer, 64-bit (SteamOS supported)<br></li><li><strong>Processor:</strong> Any modern dual-core 64-bit processor<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Vulkan- or OpenGL-capable integrated graphics with current Mesa/vendor drivers (CPU software fallback included; no dedicated GPU required)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 100 MB available space<br></li><li><strong>Sound Card:</strong> Not required (no audio)<br></li><li><strong>Additional Notes:</strong> Requires the Steam client running and logged in</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+
+									</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+									<div class="game_page_autocollapse" style="max-height: 400px;">
+						<div id="game_area_legal">
+							<p>Porthole is not affiliated with or endorsed by any game or company mentioned. All trademarks are the property of their respective owners.</p>
+						</div>
+					</div>
+				
+								
+				</div>
+
+			<div class="clear_both" style="clear: both;"></div>
+		</div>
+
+		<div class="related_items_ctn">
+			<div class="page_content game_description_column ">
+				
+				
+				<div  data-featuretarget="creatorhome-carousel" data-props="{&quot;title&quot;:&quot;More from SeStudio&quot;,&quot;clanID&quot;:32869227,&quot;seeAllLink&quot;:&quot;https://store.steampowered.com/franchise/sestudio?snr=1_5_9__317&quot;,&quot;appIDs&quot;:[743920],&quot;rgAppIDToCreatorIDs&quot;:[],&quot;rgAllCreatorClanIDs&quot;:[],&quot;strFeatureFirstAppMsg&quot;:&quot;#Featured_App_Reason_YouMight&quot;,&quot;bFullWidth&quot;:false}"></div>
+				<div  data-featuretarget="storeitems-carousel" data-props="{&quot;title&quot;:&quot;More like this&quot;,&quot;seeAllLink&quot;:&quot;https://store.steampowered.com/recommended/morelike/app/4963920/?snr=1_5_9__300&quot;,&quot;appIDs&quot;:[5126210,2274030],&quot;navKey&quot;:&quot;more_like_this_carousel&quot;,&quot;sortOrder&quot;:&quot;shuffle&quot;,&quot;scorePenaltyIfOwned&quot;:5,&quot;bFullWidth&quot;:false}"></div>
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data"></div>
+
+				
+				<div class="steam_curators_block block responsive_apppage_reviewblock">
+			<div class="block_header">
+				<div class="right"><a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=4963920&snr=1_5_9__top-curators">View all</a></div>
+				<h2>What Curators Say</h2>
+				<div class="no_curators_followed">
+					8 Curators have reviewed this product. Click <a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=4963920&snr=1_5_9__top-curators">here</a> to see them.				</div>
+			</div>
+		</div>
+		
+
+			</div>
+		</div>
+
+
+		<div class="review_ctn">
+			<div class="page_content">
+
+				<div id="app_reviews_hash" class="app_reviews_area">
+									<div class="" data-featuretarget="appreviews" data-props="{&quot;appid&quot;:4963920,&quot;app_release_date&quot;:&quot;1785759179&quot;,&quot;appname&quot;:&quot;Porthole - Local Port Sharing&quot;,&quot;steamworks_appid&quot;:4963920,&quot;app_type&quot;:6,&quot;summary_num_positive_reviews&quot;:981,&quot;summary_num_reviews&quot;:1059,&quot;summary_options&quot;:{&quot;bHasAnyReviews&quot;:true,&quot;eUserReviewScorePreference&quot;:0,&quot;bCanManageReviewBombs&quot;:false,&quot;bCanEditApp&quot;:false,&quot;summaryDisplayed&quot;:{&quot;nReviews&quot;:1059,&quot;nReviewsPositive&quot;:981,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:0},&quot;summaryRecent&quot;:{&quot;nReviews&quot;:254,&quot;nReviewsPositive&quot;:231,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:30}},&quot;filter_options&quot;:{&quot;nReviewsPositive&quot;:981,&quot;nReviewsNegative&quot;:78,&quot;nReviewsSteamPurchase&quot;:1,&quot;nReviewsNonSteamPurchase&quot;:1058,&quot;nReviewsYourLanguages&quot;:98,&quot;bCanFilterByReviewQuality&quot;:true,&quot;rgPlaytimePresetHours&quot;:[0,1,10]}}"></div>
+		<div style="clear: left"></div>
+					</div>
+			</div>
+		</div>
+
+				<dialog id="reviewSettingsPopupCtn">
+			<div id="reviewSettingsPopupContent" class="review_settings_popup_content" >
+				<div class="review_settings_popup_header">
+					<div>Review Filters</div>
+					<div onclick="CloseReviewSettingsModal();"><img src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" /></div>
+				</div>
+			</div>
+		</dialog>
+
+
+			</div>
+	</div>
+
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal"  style="display: none">
+	<div id="widget_create">
+		<p>You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam.</p>
+
+				<p class="small">Enter up to 375 characters to add a description to your widget:</p>
+		<div class="app_embed_dialog_description">
+			<textarea name="w_text" placeholder="Play LAN and self-hosted games with faraway friends. Porthole is a proxy that forwards a port you pick to your Steam friends, so they connect as if on your LAN. No port forwarding, no public IP, no router setup. A Steam-based take on Hamachi and Radmin." maxlength="375"></textarea>
+		</div>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="index.html@snr=1_4_seasonalsale__tab-TrendingFree.html#" onclick="CreateWidget(4963920); return false;"><span>Create widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">Copy and paste the HTML below into your website to make the above widget appear</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>Popular user-defined tags for this product:<span class="app_tag_modal_tooltip" data-tooltip-text="These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag's popularity on this product.">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>Sign In</h2>
+					<p>Sign in to add your own tags to this product.</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/4963920">
+							<span>Sign In</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 4963920,
+				[{"tagid":113,"name":"Free to Play","count":36,"browseable":true},{"tagid":87,"name":"Utilities","count":35,"browseable":true},{"tagid":13906,"name":"Game Development","count":31,"browseable":true},{"tagid":3843,"name":"Online Co-Op","count":15,"browseable":true},{"tagid":1685,"name":"Co-op","count":14,"browseable":true},{"tagid":7368,"name":"Local Multiplayer","count":13,"browseable":true},{"tagid":8013,"name":"Software","count":13,"browseable":true},{"tagid":3859,"name":"Multiplayer","count":13,"browseable":true},{"tagid":3841,"name":"Local Co-Op","count":12,"browseable":true},{"tagid":13782,"name":"Experimental","count":12,"browseable":true},{"tagid":5432,"name":"Programming","count":11,"browseable":true},{"tagid":1681,"name":"Pirates","count":11,"browseable":true},{"tagid":150626,"name":"Gaming","count":11,"browseable":true},{"tagid":19780,"name":"Submarine","count":9,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null,
+				false			);
+
+						if ( typeof GDynamicStore != 'undefined' )
+				GDynamicStore.FixupNamePortion();
+			
+					});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div  data-featuretarget="footer"></div>
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>
