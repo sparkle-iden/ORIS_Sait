@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Search Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="home-shell">
+      <header class="weather" aria-label="Weather in Ahmedabad">
+        <strong>36°</strong>
+        <span>Ahmedabad</span>
+      </header>
+
+      <section class="hero" aria-label="Search">
+        <p class="time" id="time">09:11:01</p>
+        <p class="greeting" id="greeting">Good Morning, Saad.</p>
+
+        <form class="search-form" id="search-form" role="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="search-icon">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5"></path>
+          </svg>
+          <input id="search-input" type="search" placeholder="Search" autocomplete="off" aria-label="Search the web" />
+        </form>
+
+        <nav class="shortcuts" aria-label="Quick links">
+          <a class="shortcut" href="https://www.youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <span class="brand youtube">▶</span>
+          </a>
+          <a class="shortcut" href="https://chatgpt.com" target="_blank" rel="noreferrer" aria-label="ChatGPT">
+            <span class="brand chatgpt">✳</span>
+          </a>
+          <a class="shortcut" href="https://www.goodreads.com" target="_blank" rel="noreferrer" aria-label="Goodreads">
+            <span class="brand goodreads">G</span>
+          </a>
+          <a class="shortcut" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="X">
+            <span class="brand twitter">♥</span>
+          </a>
+          <a class="shortcut" href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <span class="brand github">●</span>
+          </a>
+          <a class="shortcut linkedin" href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <span class="brand">in</span>
+          </a>
+          <button class="shortcut add-shortcut" type="button" aria-label="Add a shortcut">+</button>
+        </nav>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
